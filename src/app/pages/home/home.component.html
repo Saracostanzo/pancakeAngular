@@ -1,6 +1,6 @@
 <main class="home">
   <div class="home-container-principale">
-    <div class="home.container-prima-e-seconda-sez">
+    <div class="home-container-prima-e-seconda-sez">
       <div class="home-section home-section1">
         <div class="home-subcontainer-section home-subcontainer-section1">
           <div class="home-container-text-section home-container-text-section1">
@@ -72,7 +72,7 @@
               </div>
               <div class="components-card-content">
                 <h3 class="components-card-title">31 million</h3>
-                <h3 class="components-user-title">trades</h3>
+                <h3 class="components-user-title colorT">trades</h3>
                 <div class="components-text">made in the last 30 days</div>
               </div>
             </div>
@@ -86,7 +86,7 @@
               </div>
               <div class="components-card-content">
                 <h3 class="components-card-title">$12 billion</h3>
-                <h3 class="components-user-title">staked</h3>
+                <h3 class="components-user-title colorS">staked</h3>
                 <div class="components-text">Total Value Locked</div>
               </div>
             </div>
@@ -96,17 +96,17 @@
     </div>
   </div>
 
-  <div class="home-section home-section4">
+  <div class="home-section home-section4 components-carad-container">
     <div class="home-container-img-asimmetria-tra-section3-4">
       <img src="../../../assets/img/asimmetria-page-home.svg" class="home-img-asimmetria-section4">
     </div>
     <div class="home-subcontainer-section home-subcontainer-section4">
       <div class="home-container-text-section home-container-text-section4">
-        <h1 class="home-title home-title-section4"><span class="home-text-trade">{{objs[1].span}}</span>{{objs[1].h1}}</h1>
+        <h1 class="home-title home-title-section4"><span class="home-text-trade">{{objs[1].span}} </span>{{objs[1].h1}}</h1>
         <h5 class="home-subtitle home-subtitle-section4">{{objs[1].h5}}</h5>
 
       <div class="home-container-buttons-section home-container-buttons-section4">
-        <button class="buttonStandard home-button-sez4"> <a href="#" class="home-collegam-page-trade"></a>{{objs[1].buttons}}</button>
+        <button class="buttonStandard buttonHover home-button-sez4"> <a href="#" class="home-collegam-page-trade"></a>{{objs[1].buttons}}</button>
         <a href="https://docs.pancakeswap.finance/" class="home-colleg-documentazione-pancake">{{objs[1].a}}</a>
       </div>
     </div>
@@ -257,7 +257,7 @@
 
                     <div class="components-perd-btn-layout">
                       <a id="homepage-prediction-cta" class="home-collegam-page-win-sect-predictionbeta" href="#">
-                        <button class="components-pred-btn-layout" scale="md">
+                        <button class="components-pred-btn-layout buttonHover" scale="md">
                           <div class="components-pred-btn-text-col">
                             Play
                           </div>
@@ -294,9 +294,9 @@
                       numbers match
                     </div>
 
-                    <div class="components-lott-btn-layout">
-                      <a id="homepage-prediction-cta" class="home-collegam-page-win-sect-lottery" href="#">
-                        <button class="components-lott-btn-layout" scale="md">
+                    <div class="components-lott-btn-layout buttonHover">
+                      <a id="homepage-prediction-cta" class="home-collegam-page-win-sect-lottery " href="#">
+                        <button class="components-lott-btn-layout " scale="md">
                           <div class="components-lott-btn-text-col">
                             Buy Tickets
                           </div>
@@ -314,45 +314,45 @@
     </div>
     </div>
   </div>
-  <!-- <div class="home-section home-section7">
+  <div class="home-section home-section7">
     <div class="home-subcontainer-section home-subcontainer-section7">
-      <div class="home-container-text-section home-container-text-section7">
-        <h1 class="home-title home-title-section7"><span class="home-text-cake">{{objs[3].span}} </span>{{objs[3].h1}}</h1>
-        <h5 class="home-subtitle home-subtitle-section7">{{objs[3].h5}}</h5>
-      <div class="home-container-buttons-section7">
-        <button class="buttonSmall buttonHover buttonActive home-button-sez7"><a href="src/earn.html"
-            class="home-collegam-page-earn"></a>{{objs[3].buttons}}/button>
-        <a href="https://docs.pancakeswap.finance/" class="home-colleg-documentazione-pancake">{{objs[3].a}}</a>
-      </div>
-      </div>
-      <div class="home-container-img home-container-images-section7">
-        <img src="Assets1/img homepage/pancake1-dinamico-section7.webp" class="home-pancake1-animation-section7">
-        <img src="Assets1/img homepage/pancake2-dinamico-section7.webp" class="home-pancake2-animation-section7">
-        <img src="Assets1/img homepage/monetabunny3-dinamico-section7.webp"
-          class="home-monetabunny3-animation-section5">
-        <img src="Assets1/img homepage/pancake4-dinamico-section7.webp" class="home-pancake4-animation-section7">
-      </div>
-    </div>
+       <div class="home-container-text-section home-container-text-section7">
+         <h1 class="home-title home-title-section7"><span class="home-text-cake">{{objs[3].span}} </span>{{objs[3].h1}}</h1>
+         <h5 class="home-subtitle home-subtitle-section7">{{objs[3].h5}}</h5>
+       <div class="home-container-buttons-section7">
+         <button class="buttonSmall buttonHover buttonActive home-button-sez7"><a href="src/earn.html"
+             class="home-collegam-page-earn"></a>{{objs[3].buttons}}</button>
+         <a href="https://docs.pancakeswap.finance/" class="home-colleg-documentazione-pancake">{{objs[3].a}}</a>
+       </div>
+       </div>
+       <div class="home-container-img home-container-images-section7">
+         <img src="../../../assets/img homepage/pancake1-dinamico-section7.webp" class="home-pancake1-animation-section7">
+         <img src="../../../assets/img homepage/pancake2-dinamico-section7.webp" class="home-pancake2-animation-section7">
+         <img src="../../../assets/img homepage/monetabunny3-dinamico-section7.webp"
+           class="home-monetabunny3-animation-section5">
+         <img src="../../../assets/img homepage/pancake4-dinamico-section7.webp" class="home-pancake4-animation-section7">
+       </div>
+     </div>
 
-      <div class="home-container-tab-cake">
-      <div class="home-container-subsection7-text">
-        <h5 class="home-title-text-subsection7">Total supply</h5>
-        <h2 class="home-value-subsection7"><span class="homwe-number-subsection7"></span></h2>
-      </div>
-        <div class="home-container-subsection7-text">
-          <h5 class="home-title-text-subsection7">Burned to date</h5>
-          <h2 class="home-value-subsection7"><span class="homwe-number-subsection7">339,094,304</span></h2>
-        </div>
-          <div class="home-container-subsection7-text">
-            <h5 class="home-title-text-subsection7">Market cap</h5>
-            <h2 class="home-value-subsection7"><span class="homwe-number-subsection7"></span></h2>
-          </div>
-          <div class="home-container-subsection7-text">
-            <h5 class="home-title-text-subsection7">Current emissions</h5>
-            <h2 class="home-value-subsection7"><span class="homwe-number-subsection7">14.25/block</span></h2>
-          </div>
-        </div>
-        </div> -->
+       <div class="home-container-tab-cake">
+       <div class="home-container-subsection7-text">
+         <h5 class="home-title-text-subsection7">Total supply</h5>
+         <h2 class="home-value-subsection7"><span class="homwe-number-subsection7"></span></h2>
+       </div>
+         <div class="home-container-subsection7-text">
+           <h5 class="home-title-text-subsection7">Burned to date</h5>
+           <h2 class="home-value-subsection7"><span class="homwe-number-subsection7">339,094,304</span></h2>
+         </div>
+           <div class="home-container-subsection7-text">
+             <h5 class="home-title-text-subsection7">Market cap</h5>
+             <h2 class="home-value-subsection7"><span class="homwe-number-subsection7"></span></h2>
+           </div>
+           <div class="home-container-subsection7-text">
+             <h5 class="home-title-text-subsection7">Current emissions</h5>
+             <h2 class="home-value-subsection7"><span class="homwe-number-subsection7">14.25/block</span></h2>
+           </div>
+         </div>
+         </div>
 
       <div class="home-section home-section8">
         <!-- <div class="home-container-sfondo8"> -->

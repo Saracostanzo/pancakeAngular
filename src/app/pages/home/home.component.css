@@ -1,3 +1,520 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+* {
+  font-family: Kanit, sans-serif;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.home-container-principale{
+  width: 100vw;
+
+}
+.home-container-prima-e-seconda-sez{
+  background:var(--bg-color--grad-blue);
+}
+.home-subcontainer-section{
+margin-top: 0px;
+}
+.buttonStandard {
+  border-radius: 16px;
+  border: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 50px;
+  background-color: var(--secundary-color);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 165px;
+  height: 48px;
+  opacity: 1;
+}
+
+.buttonLarge {
+  border-radius: var(--border-rad);
+  border: 0px;
+  font-size: var(--font-size);
+  font-weight: var(--font-weigth);
+  height: 48px;
+  background-color: var(--secundary-color);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 240px;
+  height: 55px;
+  opacity: 1;
+}
+
+/* Versione con background bianco */
+.buttonMedium {
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight:600;
+  opacity: 1;
+  color: var(--secundary-color);
+  background-color: rgb(255, 255, 255);
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 132px;
+  height: 48px;
+  border: 2px solid var(--secundary-color);
+  box-shadow: none;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.buttonSmall {
+  border-radius:16px;
+  border: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  background-color: var(--secundary-color);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 108px;
+  height: 48px;
+  opacity: 1;
+}
+
+.buttonSquashed {
+  border-radius:16px;
+  border: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  background-color: var(--secundary-color);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 137px;
+  height: 32px;
+  opacity: 1;
+}
+
+.buttonHover:hover {
+  opacity: 0.65;
+}
+.buttonActive:active {
+  background-color: rgb(31, 199, 212, 0.85);
+  transform: translateY(1px);
+  box-shadow: none;
+}
+.components-carad-container {
+  height: fit-content;
+  padding: 1px 1px 4px;
+  box-sizing: border-box;
+  background: rgb(231, 227, 235);
+  border-radius: 24px;
+  color: rgb(40, 13, 95);
+  overflow: hidden;
+  position: relative;
+
+  /* Modifica Design System da togliere */
+  width: 282px;
+}
+
+.components-card {
+  overflow: inherit;
+  background: rgb(255, 255, 255);
+  border-radius: 24px;
+  width: 280px;
+  height: 280px;
+}
+
+.components-card-padding {
+  padding: 24px;
+}
+
+.components-position-svg {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.components-card-svg {
+  align-self: center;
+  fill: rgb(118, 69, 217);
+  flex-shrink: 0;
+  width: 36px;
+}
+
+.components-card-content {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  margin-top: 64px;
+  min-height: 168px;
+  min-width: 232px;
+  width: fit-content;
+}
+
+.components-card-title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: rgb(40, 13, 95);
+}
+
+.components-user-title {
+  font-size: 40px;
+  margin-bottom: 24px;
+  color: rgb(118, 69, 217);
+}
+
+.components-text {
+  color: rgb(122, 110, 170);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.tab-box-top-farm-syrup-pools {
+  display: flex;
+}
+.tab-scritta-top {
+font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: rgb(40, 13, 95);
+}
+.tab-scritta-switch-farm-syrup-pools {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+color: rgb(118, 69, 217);
+}
+.tab-button-switch-farm-syrup-pools {
+  padding: 0px;
+  width: 48px;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  background-color: transparent;
+  color: rgb(31, 199, 212);
+  box-shadow: none;
+  height: 100%;
+}
+.components-cards-layout {
+  display: flex;
+  flex-direction: row;
+  max-width: 600px;
+  margin: 0px auto;
+}
+.colorT{
+color: rgb(31, 199, 212);
+}
+.colorS{
+  color: rgb(237, 75, 158);
+}
+/* Start Prediction Card */
+
+.components-prediction-card-layout {
+  display: flex;
+  flex: 1 1 0%;
+  margin-right: 24px;
+  margin-bottom: 0px;
+  max-width: 100%;
+}
+
+.components-prediction-rotate {
+  transform: rotate(-2.36deg);
+  height: fit-content;
+  padding: 1px 1px 4px;
+  box-sizing: border-box;
+  background: rgb(255, 178, 55);
+  border-radius: 24px;
+  color: rgb(40, 13, 95);
+  overflow: hidden;
+  position: relative;
+}
+
+.components-prediction-color {
+  width: 100%;
+  height: 100%;
+  overflow: initial;
+  background: linear-gradient(
+    rgb(255, 178, 55) 0%,
+    rgb(255, 205, 81) 51.17%,
+    rgb(255, 231, 106) 100%
+  );
+  border-radius: 24px;
+}
+
+.components-prediction-padding {
+  padding: 24px;
+}
+
+.components-prediction-svg-pos {
+  transform: rotate(-2.36deg);
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.components-pred-svg-layout {
+  align-self: center;
+  flex-shrink: 0;
+  width: 36px;
+}
+
+.components-win-cards-content-layout {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+}
+
+.components-pred-text-style {
+  color: rgb(40, 13, 95);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.components-pred-title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.components-pred-in-bnb {
+  color: rgb(40, 13, 95);
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.components-pred-will-bnb {
+  color: rgb(40, 13, 95);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.components-perd-btn-layout {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.components-pred-a {
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.components-pred-btn-layout {
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 48px;
+  padding: 0px 24px;
+  background-color: rgb(31, 199, 212);
+  color: white;
+  width: 100%;
+}
+
+.components-pred-btn-text-col {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.components-pred-btn-svg-col {
+  align-self: center;
+  fill: rgb(255, 255, 255);
+  flex-shrink: 0;
+  margin-left: 4px;
+  width: 20px;
+}
+
+/* End Prediction Card */
+
+/* Start Lottery Card */
+
+.components-lottery-card-layout {
+  display: flex;
+  flex: 1 1 0%;
+  max-width: 100%;
+}
+
+.components-lottery-card-rotate {
+  transform: rotate(1.43deg);
+  height: fit-content;
+  padding: 1px 1px 4px;
+  box-sizing: border-box;
+  background: rgb(60, 23, 134);
+  border-radius: 24px;
+  color: rgb(40, 13, 95);
+  overflow: hidden;
+  position: relative;
+}
+
+.components-lottery-card-color {
+  width: 100%;
+  height: 100%;
+  overflow: initial;
+  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+  border-radius: 24px;
+}
+
+.components-lottery-card-pad {
+  padding: 24px;
+}
+
+.componetns-lottery-svg-pos {
+  transform: rotate(1.43deg);
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.components-lott-svg-layout {
+  align-self: center;
+  fill: white;
+  flex-shrink: 0;
+  width: 36px;
+}
+
+.components-lott-text-style {
+  color: white;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.components-cONvdr {
+  color: rgb(40, 13, 95);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 40px;
+}
+
+.components-lott-in-cake {
+  color: white;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.components-lott-buy-tickets {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.components-lott-btn-layout {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.components-lott-a {
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.components-lott-btn-layout {
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 48px;
+  /* padding: 0px 24px; */
+  background-color: rgb(31, 199, 212);
+  color: white;
+  width: 100%;
+}
+
+.components-lott-btn-text-col {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.components-lott-btn-svg-col {
+  align-self: center;
+  fill: rgb(255, 255, 255);
+  flex-shrink: 0;
+  margin-left: 4px;
+  width: 20px;
+}
+
 img {
   max-width: 100vh;
 }
