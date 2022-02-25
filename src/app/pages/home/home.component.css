@@ -174,45 +174,7 @@ vertical-align: baseline;
   font-weight: 400;
   line-height: 1.5;
 }
-.tab-box-top-farm-syrup-pools {
-  display: flex;
-}
-.tab-scritta-top {
-font-size: 20px;
-  font-weight: 600;
-  line-height: 1.1;
-  color: rgb(40, 13, 95);
-}
-.tab-scritta-switch-farm-syrup-pools {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.1;
-color: rgb(118, 69, 217);
-}
-.tab-button-switch-farm-syrup-pools {
-  padding: 0px;
-  width: 48px;
-  -webkit-box-align: center;
-  align-items: center;
-  border: 0px;
-  border-radius: 16px;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 600;
-  -webkit-box-pack: center;
-  justify-content: center;
-  letter-spacing: 0.03em;
-  line-height: 1;
-  opacity: 1;
-  outline: 0px;
-  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-  background-color: transparent;
-  color: rgb(31, 199, 212);
-  box-shadow: none;
-  height: 100%;
-}
+
 .components-cards-layout {
   display: flex;
   flex-direction: row;
@@ -1029,7 +991,6 @@ align-items: center;
     .home-section5{
       background: var( --bg-color--grad-light);
       padding-top: 48px;
-      padding-bottom: 120px;
    }
    /* .home-container-img-asimmetria-tra-section3-4{
       position: relative;
@@ -1145,86 +1106,7 @@ align-items: center;
     /* da portare in altro componente */
 
 
-    .home-subsection5-tab-tod-farms{
-      padding: 24px;
-      padding-left: 48px;
-        display: grid;
-        max-height: 130px;
-        width: 70%;
-        overflow: hidden;
 
-    }
-    .tab-box-top-farm-syrup-pools{
-        display: grid;
-        margin-bottom: 24px;
-        padding-left: 16px;
-    }
-    .tab-scritta-top{
-      font-weight: 600;
-      line-height: 1.1;
-      color: rgb(40, 13, 95);
-    }
-    @media screen and (min-width: 968px){
-.tab-scritta-top{
-  font-size: 20px;
-}
-    }
-
-    .tab-scritta-switch-farm{
-      color: rgb(118, 69, 217);
-    }
-    .tab-scritta-switch-syrup-pools{
-      color: rgb(118, 69, 217);
-      display: none;
-    }
-
-  .home-container-text-switch-tab-farms{
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  max-height: 250px;
-
-  }
-
-
-  @media screen and (min-width: 852px){
-  .home-container-text-switch-tab-farms{
-      gap: 32px;
-  }
-}
-.home-container-section-text-tab-farms{
-  display: unset;
-  top: 0px;
-  opacity: 1;
-  margin-top: 0px;
-  padding-right: 16px;
-  height: 80px;
-  top: 0px;
-  padding-left: 16px;
-  border-left: 1px solid rgb(215, 202, 236);
-}
-
-.home-container-section-text-tab-syrup-pools{
-  top: 0px;
-  opacity: 1;
-  padding-right: 16px;
-  height: 80px;
-  top: 0px;
-  padding-left: 16px;
-  border-left: 1px solid rgb(215, 202, 236);
-}
-
-.home-title-text-switch-taab-farms{
-color: rgb(118, 69, 217);
-font-size: 12px;
-}
-.home-value-switch-tab-farms{
-  color: rgb(40, 13, 95);
-  font-size: 16px;
-}
-.home-subtitle-switch-tab-farms{
-  color: rgb(122, 110, 170);
-  font-size: 16px;
-}
     /* sezione 6 */
 
     .home-section6{
@@ -1524,6 +1406,7 @@ color: rgb(122, 110, 170);
     background: rgb(250, 249, 250);
     padding-top: 48px;
     padding-bottom: 80px;
+    align-items: center;
  }
 
     .home-title-section7{
@@ -1660,53 +1543,6 @@ color: rgb(122, 110, 170);
         transform: translate(3px, 15px);
       }
     }
-
-
-    /* da portare in altro componente */
-
-
-    .home-container-tab-cake{
-      display: grid;
-      padding-left: 110px;
-      grid-template-columns: repeat(5, auto);
-      max-height: 80px;
-      width: 80%;
-  }
-
-    @media screen and (min-width: 576px){
-      .home-container-tab-cake{
-        height: 80px;
-    }
-  }
-
-  @media screen and (min-width: 852px){
-  .home-container-tab-cake{
-      gap: 32px;
-  }
-  }
-  .home-container-subsection7-text{
-      top: 0px;
-      opacity: 1;
-      margin-top: 0px;
-      padding-right: 16px;
-      height: 56px;
-      top: 0px;
-      padding-left: 16px;
-      border-left: 1px solid rgb(215, 202, 236);
-  }
-
-  .home-title-text-subsection7{
-  color: rgb(122, 110, 170);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  }
-  .home-value-subsection7{
-  color: rgb(40, 13, 95);
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.1;
-  }
 
   /* sezione 8 */
 
