@@ -9,31 +9,8 @@
       <input placeholder="Search pools or tokens" scale="md" class="input-search__input " value="">
     </div>
   </div>
-  <div class="info-container-grafici">
-    <h2 class="info-title-section-grafici">PancakeSwap Info & Analytics</h2>
-    <div class="info-box-grafici">
-      <div class="info-box-grafico1">
-        <div class="info-sub-box-grafico1">
-          <h5 class="info-title-grafico">Liquidity</h5>
-          <h1 class="info-number-grafico"> $ 4.20B</h1>
-          <h5 class="info-subtitle-grafico">Jan 26, 2022</h5>
-          <div class="info-box-grafico-img">
-            <!-- Grafico1 -->
-          </div>
-        </div>
-      </div>
-      <div class="info-box-grafico1">
-        <div class="info-sub-box-grafico1">
-          <h5 class="info-title-grafico">Volume 24H</h5>
-          <h1 class="info-number-grafico"> $ 533.65M</h1>
-          <h5 class="info-subtitle-grafico">Jan 26, 2022</h5>
-          <div class="info-box-grafico-img">
-            <!-- Grafico2 -->
-          </div>
-        </div>
-      </div>
-    </div>
-
+<pancake-grafico></pancake-grafico>
+<div class="bls">
   <h2 class="info-title-tokens-list">Top Tokens</h2>
   <div class="components-space">
     <div class="info-components-tokens-container">
@@ -47,30 +24,35 @@
         <div class="components-tokens-header-text">LIQUIDITY</div>
       </div>
       <div class="components-tokens-border"></div>
-      <a class="components-tokens-a" href="#">
+      <div class="components-tokens-a" href="#"*ngFor = "let iter of iters">
         <div class="components-tokens-a-content">
           <div class="components-tokens-number-lay">
-            <div class="components-tokens-number-sty">1</div>
+            <div class="components-tokens-number-sty">{{iter.rank}}</div>
           </div>
           <div class="components-tokens-first-text-lay">
             <img class="components-tokens-img" alt="token logo"
-              src="https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c/logo.png">
+              src= {{iter.iconUrl}}>
             <div class="components-tokens-first-text-lay2">
               <div class="components-tokens-text-out-sty">
-                Wrapped BNB
+               {{iter.name}}
               </div>
-              <div class="components-tokens-text-in-sty">(WBNB)</div>
+              <div class="components-tokens-text-in-sty">{{iter.symbol}}</div>
             </div>
           </div>
-          <div class="components-tokens-text-out-sty">$572.62</div>
+          <div class="components-tokens-text-out-sty">${{iter.price}}</div>
           <div class="components-tokens-text-out-sty">
-            <div class="components-tokens-text-failure">↓4.17%</div>
+            <div class="components-tokens-text-failure"[ngClass]="{
+              'rosa':iter.change < 0,
+              'azzurro':iter.change > 0
+            }">
+           {{iter.change}}%
+            </div>
           </div>
-          <div class="components-tokens-text-out-sty">$1.04B</div>
-          <div class="components-tokens-text-out-sty">$4.26B</div>
+          <div class="components-tokens-text-out-sty">${{iter.marketCap}}</div>
+          <div class="components-tokens-text-out-sty">${{iter.price}}</div>
         </div>
-      </a>
       <div class="components-tokens-border"></div>
+      </div>
       <div class="componnents-tokens-foot-lay">
         <div class="components-tokens-l-arrow">
           <img src="../../../assets/img/freccia-sx.svg">
@@ -81,10 +63,8 @@
         </div>
       </div>
     </div>
-  </div>
 
   <h2 class="info-title-tokens-list">Top Pools</h2>
-  <div class="components-space">
     <div class="info-components-tokens-container">
       <div class="info-components-tokens-header-lay">
         <div class="components-tokens-hashtag">#</div>
@@ -97,32 +77,32 @@
         <div class="components-tokens-header-text">LIQUIDITY</div>
       </div>
       <div class="components-tokens-border"></div>
-      <a class="components-tokens-a" href="#">
+      <div class="components-tokens-a" *ngFor = "let iter1 of iters">
         <div class="info-components-tokens-a-content">
           <div class="components-tokens-number-lay">
-            <div class="components-tokens-number-sty">1</div>
+            <div class="components-tokens-number-sty">{{iter1.rank}}</div>
           </div>
           <div class="components-tokens-first-text-lay">
             <img src="../../../assets/img/questionMark.svg">
             <img class="components-tokens-img" alt="token logo"
-              src="https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c/logo.png">
+              src={{iter1.iconUrl}}>
             <div class="components-tokens-first-text-lay2">
               <div class="components-tokens-text-out-sty">
-                MGOLD/BUSD
+                {{iter1.symbol}}
               </div>
               <div class="components-tokens-text-in-sty"></div>
             </div>
           </div>
-          <div class="components-tokens-text-out-sty">$572.62M</div>
+          <div class="components-tokens-text-out-sty">${{iter1.marketCap}}</div>
           <div class="components-tokens-text-out-sty">
-            <div class="info-components-tokens-text-failure ">$4.17M</div>
+            <div class="info-components-tokens-text-failure ">${{iter1.price}}</div>
           </div>
-          <div class="components-tokens-text-out-sty">$1.04K</div>
-          <div class="components-tokens-text-out-sty">4.26B%</div>
-          <div class="components-tokens-text-out-sty">$7.26BK</div>
+          <div class="components-tokens-text-out-sty">${{iter1.listedAt}}</div>
+          <div class="components-tokens-text-out-sty">{{iter1.change}}%</div>
+          <div class="components-tokens-text-out-sty">${{iter1.price}}</div>
         </div>
-      </a>
       <div class="components-tokens-border"></div>
+      </div>
       <div class="componnents-tokens-foot-lay">
         <div class="components-tokens-l-arrow">
           <img src="../../../assets/img/freccia-sx.svg">
@@ -133,7 +113,6 @@
         </div>
       </div>
     </div>
-  </div>
 
 
   <h2 class="info-title-tokens-list">Transaction</h2>
@@ -159,7 +138,6 @@
       <label class="input-selector__label" for="soon">Removes</label>
     </div>
   </div>
-  <div class="components-space">
     <div class="info-components-tokens-container">
       <div class="info-components-tokens-header-lay">
         <div class="components-tokens-hashtag"></div>
@@ -172,33 +150,84 @@
         <div class="components-tokens-header-text">TIME↓</div>
       </div>
       <div class="components-tokens-border"></div>
-      <a class="components-tokens-a" href="#">
+      <div class="components-tokens-a" *ngFor = "let iter of iters">
         <div class="info-components-tokens-a-content">
           <div class="components-tokens-number-lay">
             <div class="components-tokens-number-sty"></div>
           </div>
           <div class="components-tokens-first-text-lay">
             <div class="components-tokens-first-text-lay2">
-              <div class="components-tokens-text-out-sty">
-                Add UST and BUSD
-              </div>
+              <a class="components-tokens-text-out-sty components-tokens-text-out-stya px"[href]="iter.coinrankingUrl" *ngFor="let trans of transaction">
+               {{trans.swaps}} {{iter.symbol}}
+               <img src="../../../assets/img/collegamento-token.svg" >
+              </a>
               <div class="components-tokens-text-in-sty"></div>
             </div>
-            <img src="../../../assets/img/collegamento-token.svg">
-
           </div>
-          <div class="components-tokens-text-out-sty">$255.93</div>
+          <div class="components-tokens-text-out-sty">${{iter.marketCap}}</div>
           <div class="components-tokens-text-out-sty">
-            <div class="info-components-tokens-text-failure ">127.58 UST</div>
+            <div class="info-components-tokens-text-failure ">${{iter.price}}</div>
           </div>
-          <div class="components-tokens-text-out-sty">128.06 BUSD</div>
-          <div class="info1-components-tokens-text-out-sty ">0xb1...1950
-            <img src="../../../assets/img/collegamento-token.svg">
-          </div>
+          <div class="components-tokens-text-out-sty">${{iter.listedAt}}</div>
+          <a class="components-tokens-text-out-sty components-tokens-text-out-stya"[href]="iter.coinrankingUrl">0x02...e1ce
+            <img src="../../../assets/img/collegamento-token.svg" >
+          </a>
           <div class="components-tokens-text-out-sty">1 day</div>
         </div>
-      </a>
       <div class="components-tokens-border"></div>
+      </div>
+      <div class="components-tokens-a" *ngFor = "let iter of iters">
+        <div class="info-components-tokens-a-content">
+          <div class="components-tokens-number-lay">
+            <div class="components-tokens-number-sty"></div>
+          </div>
+          <div class="components-tokens-first-text-lay">
+            <div class="components-tokens-first-text-lay2">
+              <a class="components-tokens-text-out-sty components-tokens-text-out-stya px"[href]="iter.coinrankingUrl" *ngFor="let trans of transaction">
+               {{trans.add}} {{iter.symbol}}
+               <img src="../../../assets/img/collegamento-token.svg" >
+              </a>
+              <div class="components-tokens-text-in-sty"></div>
+            </div>
+          </div>
+          <div class="components-tokens-text-out-sty">${{iter.marketCap}}</div>
+          <div class="components-tokens-text-out-sty">
+            <div class="info-components-tokens-text-failure ">${{iter.price}}</div>
+          </div>
+          <div class="components-tokens-text-out-sty">${{iter.listedAt}}</div>
+          <a class="components-tokens-text-out-sty components-tokens-text-out-stya"[href]="iter.coinrankingUrl">0x02...e1ce
+            <img src="../../../assets/img/collegamento-token.svg" >
+          </a>
+          <div class="components-tokens-text-out-sty">1 day</div>
+        </div>
+      <div class="components-tokens-border"></div>
+      </div>
+      <div class="components-tokens-a" *ngFor = "let iter of iters">
+        <div class="info-components-tokens-a-content">
+          <div class="components-tokens-number-lay">
+            <div class="components-tokens-number-sty"></div>
+          </div>
+          <div class="components-tokens-first-text-lay">
+            <div class="components-tokens-first-text-lay2">
+              <a class="components-tokens-text-out-sty components-tokens-text-out-stya px"[href]="iter.coinrankingUrl" *ngFor="let trans of transaction">
+               {{trans.removes}} {{iter.symbol}}
+               <img src="../../../assets/img/collegamento-token.svg" >
+              </a>
+              <div class="components-tokens-text-in-sty"></div>
+            </div>
+          </div>
+          <div class="components-tokens-text-out-sty">${{iter.marketCap}}</div>
+          <div class="components-tokens-text-out-sty">
+            <div class="info-components-tokens-text-failure ">${{iter.price}}</div>
+          </div>
+          <div class="components-tokens-text-out-sty">${{iter.listedAt}}</div>
+          <a class="components-tokens-text-out-sty components-tokens-text-out-stya"[href]="iter.coinrankingUrl">0x02...e1ce
+            <img src="../../../assets/img/collegamento-token.svg" >
+          </a>
+          <div class="components-tokens-text-out-sty">1 day</div>
+        </div>
+      <div class="components-tokens-border"></div>
+      </div>
       <div class="componnents-tokens-foot-lay">
         <div class="components-tokens-l-arrow">
           <img src="../../../assets/img/freccia-sx.svg">
@@ -209,6 +238,8 @@
         </div>
       </div>
     </div>
-  </div>
 </div>
 </div>
+
+
+
