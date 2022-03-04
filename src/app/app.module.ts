@@ -9,10 +9,20 @@ import { EarnHeaderComponent } from './pages/earn/earn-header/earn-header.compon
 import { EarnContentComponent } from './pages/earn/earn-content/earn-content.component';
 import { EanrListComponent } from './pages/earn/earn-content/eanr-list/eanr-list.component';
 import { EanrCardComponent } from './pages/earn/earn-content/eanr-card/eanr-card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [AppComponent, FooterComponent, DarkmodeComponent, EarnComponent, EarnHeaderComponent, EarnContentComponent, EanrListComponent, EanrCardComponent],
-  imports: [BrowserModule],
+  declarations: [
+    AppComponent,
+    FooterComponent,
+    DarkmodeComponent,
+    EarnComponent,
+    EarnHeaderComponent,
+    EarnContentComponent,
+    EanrListComponent,
+    EanrCardComponent,
+  ],
+  imports: [BrowserModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

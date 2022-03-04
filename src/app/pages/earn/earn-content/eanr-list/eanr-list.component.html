@@ -2,7 +2,7 @@
   <div class="earn__table-container">
     <div class="earn__table-wrapper">
       <table class="earn__table-table" id="earn-table">
-        <tbody class="earn__table-table-body">
+        <tbody class="earn__table-table-body" *ngFor="let token of tokens">
           <tr class="earn__table-table-row">
             <td>
               <div class="earn__table-table-row__cont-box">
@@ -19,8 +19,9 @@
                             class="earn__table-table-row__cont-el__title-icons-icon earn__table-table-row__cont-el__title-icon-container earn__table-table-row__cont-el__title-icons earn__table-table-row__cont-el__title-icon-main"
                           >
                             <img
-                              src="https://pancakeswap.finance/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.svg"
+                              [src]="token.logo"
                               class="earn__table-table-row__cont-el__title-icons-img"
+                              onerror="this.src = 'https://pancakeswap.finance/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.svg';"
                             />
                           </div>
                           <div
@@ -38,7 +39,7 @@
                           color="text"
                           class="earn__table-table-row__cont-el__title-text"
                         >
-                          CAKE-BNB
+                          {{ token.symbol | uppercase }} -BNB
                         </div>
                       </div>
                     </div>
@@ -71,7 +72,7 @@
                       <div
                         class="earn__table-table-row__cont-el__boxed earn__table-table-row__cont-el__percent-text earn__table-table-row__cont-el__percent-text--perc"
                       >
-                        43.23%<button
+                        {{ token.decimals }}%<button
                           class="sc-hKFxyN earn__table-table-row__cont-el__btn earn__table-table-row__cont-el__btn--layout"
                           scale="sm"
                         >
@@ -115,7 +116,7 @@
                           color="text"
                           class="earn__table-table-row__cont-el__cash-text-value"
                         >
-                          $288.664.236
+                          ${{ token.value }}
                         </div>
                       </div>
                       <div
@@ -149,7 +150,7 @@
                       <div
                         class="earn__table-table-row__cont-el__multiplier-text"
                       >
-                        40x
+                        {{ token.multiplier }}X
                       </div>
                       <div
                         class="earn__table-table-row__cont-el__multiplier-icon"
@@ -193,7 +194,7 @@
               </div>
             </td>
           </tr>
-          <tr>
+          <tr class="earn-sub novisible">
             <td colspan="6">
               <div class="earn-sub__container">
                 <div class="earn-sub__link__container">
@@ -201,10 +202,12 @@
                     <a
                       target="_blank"
                       rel="noreferrer noopener"
-                      href="/add/BNB/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82"
+                      [href]="[
+                        'https://pancakeswap.finance/add/BNB/',
+                        token.address
+                      ]"
                       class="earn-sub__link__row-text earn-sub__link__row-box earn-sub__link__row-title"
-                      color="primary"
-                      >Get CAKE-BNB LP<svg
+                      >Get {{ token.name }} -BNB<svg
                         viewBox="0 0 24 24"
                         color="primary"
                         width="20px"
@@ -213,8 +216,9 @@
                       >
                         <path
                           d="M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z"
-                        ></path></svg
-                    ></a>
+                        ></path>
+                      </svg>
+                    </a>
                   </div>
                   <a
                     target="_blank"
@@ -231,8 +235,9 @@
                     >
                       <path
                         d="M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z"
-                      ></path></svg
-                  ></a>
+                      ></path>
+                    </svg>
+                  </a>
                   <a
                     target="_blank"
                     rel="noreferrer noopener"
@@ -275,7 +280,7 @@
                       <div
                         class="earn-sub__info-value__container earn-sub__info-value__link"
                       >
-                        38.59%<button
+                        {{ token.decimals }}%<button
                           class="earn-sub__info-value__icon-box earn-sub__info-value__container-cont"
                           scale="sm"
                         >
@@ -308,7 +313,9 @@
                       Multiplier
                     </div>
                     <div class="earn-sub__info-value__box-info">
-                      <div class="earn-sub__info-value__multi-value">40x</div>
+                      <div class="earn-sub__info-value__multi-value">
+                        {{ token.multiplier }}x
+                      </div>
                       <div class="earn-sub__info-value__multi-icon">
                         <svg
                           viewBox="0 0 24 24"
@@ -331,7 +338,7 @@
                     <div class="earn-sub__info-value__liq-box">
                       <div class="earn-sub__info-value__liq-text">
                         <div color="text" class="earn-sub__info-title">
-                          $202.098.409
+                          ${{ token.value }}
                         </div>
                       </div>
                       <div class="earn-sub__info-value__liq-icon">
