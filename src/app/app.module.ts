@@ -10,6 +10,7 @@ import { EarnContentComponent } from './pages/earn/earn-content/earn-content.com
 import { EanrListComponent } from './pages/earn/earn-content/eanr-list/eanr-list.component';
 import { EanrCardComponent } from './pages/earn/earn-content/eanr-card/eanr-card.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AccordeonDirective } from './directives/accordeon/accordeon.directive';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     EarnContentComponent,
     EanrListComponent,
     EanrCardComponent,
+    AccordeonDirective,
   ],
   imports: [BrowserModule, HttpClientModule],
   providers: [],

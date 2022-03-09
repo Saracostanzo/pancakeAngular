@@ -70,3 +70,11 @@ html {
 .novisible {
   display: none;
 }
+
+.visible {
+  display: block;
+}
+
+.redColor {
+  background-color: red;
+}

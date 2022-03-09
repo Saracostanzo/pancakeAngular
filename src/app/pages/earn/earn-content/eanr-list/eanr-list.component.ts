@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { TokensArr } from 'src/app/services/Tokens.service';
 import { map } from 'rxjs/operators';
 
@@ -11,6 +11,13 @@ export class EanrListComponent implements OnInit {
   constructor(private tokenService: TokensArr) {}
 
   tokens: any = [];
+  isOpen: boolean = false;
+  isAlreadyOpen = false;
+  couldClose = false;
+  @ViewChild('earnSubRow', { static: false }) earnSubRow!: ElementRef;
+  @ViewChild('earnRow', { static: false }) earnRow!: ElementRef;
+
+  selectedToken: any;
 
   ngOnInit(): void {
     this.tokenService
@@ -32,5 +39,10 @@ export class EanrListComponent implements OnInit {
         })
       )
       .subscribe((tokens) => (this.tokens = tokens));
+  }
+
+  onSelect(token: any) {
+    this.selectedToken = token;
+    this.isOpen = !this.isOpen;
   }
 }

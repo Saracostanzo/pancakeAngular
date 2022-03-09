@@ -596,6 +596,10 @@ tbody {
   margin-right: 14px;
 }
 
+.earn__table-container {
+  width: 100%;
+}
+
 .earn-sub__info-value__liq-icon {
   display: inline-block;
 }
