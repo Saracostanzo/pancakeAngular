@@ -1,30 +1,22 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class TokensArr {
   constructor(private http: HttpClient) {}
+  tokensChanged = new Subject();
 
-  fetchTokens() {
-    return this.http.get<any>(
-      'https://pancake-bca56-default-rtdb.europe-west1.firebasedatabase.app/tokens.json'
-    );
+  private tokens = [];
+
+  setTokens(tokens: any) {
+    this.tokens = tokens;
+    this.tokensChanged.next(this.tokens.slice());
   }
 
-  // setTokens(tokens: any) {
-  //   this.tokens = tokens;
-  // }
-
-  // logging() {
-  //   console.log(this.tokens);
-  // }
-
-  query = '';
-  live = false;
-  stacked = false;
-  sortOption = ['hot', 'apr', 'multiplier', 'earned', 'liquidity'];
-  sort: string[] = [];
-  sortBy: string = '';
+  getTokens() {
+    return this.tokens.slice();
+  }
 }

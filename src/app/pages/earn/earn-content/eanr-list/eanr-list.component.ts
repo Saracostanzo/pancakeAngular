@@ -1,6 +1,8 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { TokensArr } from 'src/app/services/Tokens.service';
 import { map } from 'rxjs/operators';
+import { HttpService } from 'src/app/services/HttpService';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'pancake-eanr-list',
@@ -8,7 +10,12 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./eanr-list.component.css'],
 })
 export class EanrListComponent implements OnInit {
-  constructor(private tokenService: TokensArr) {}
+  constructor(
+    private tokenService: TokensArr,
+    private httpService: HttpService
+  ) {}
+
+  subscription: Subscription | undefined;
 
   tokens: any = [];
   isOpen: boolean = false;
@@ -20,25 +27,10 @@ export class EanrListComponent implements OnInit {
   selectedToken: any;
 
   ngOnInit(): void {
-    this.tokenService
-      .fetchTokens()
-      .pipe(
-        map((tokens) => {
-          return tokens.map((tokens: any) => {
-            return (tokens = {
-              name: tokens.name,
-              address: tokens.address,
-              symbol: tokens.symbol,
-              logo: tokens.logoURI,
-              decimals: tokens.decimals,
-              value: Math.floor(Math.random() * (1000000 - 1000) + 1000),
-              multiplier: Math.floor(Math.random() * (40 - 0) + 0),
-              hot: tokens.value * tokens.multiplier,
-            });
-          });
-        })
-      )
-      .subscribe((tokens) => (this.tokens = tokens));
+    this.subscription = this.tokenService.tokensChanged.subscribe((tokens) => {
+      this.tokens = tokens;
+    });
+    this.tokens = this.tokenService.getTokens();
   }
 
   onSelect(token: any) {
