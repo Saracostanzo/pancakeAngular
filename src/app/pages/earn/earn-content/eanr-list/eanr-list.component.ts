@@ -19,8 +19,7 @@ export class EanrListComponent implements OnInit {
 
   tokens: any = [];
   isOpen: boolean = false;
-  isAlreadyOpen = false;
-  couldClose = false;
+
   @ViewChild('earnSubRow', { static: false }) earnSubRow!: ElementRef;
   @ViewChild('earnRow', { static: false }) earnRow!: ElementRef;
 
@@ -30,7 +29,6 @@ export class EanrListComponent implements OnInit {
     this.subscription = this.tokenService.tokensChanged.subscribe((tokens) => {
       this.tokens = tokens;
     });
-    this.tokens = this.tokenService.getTokens();
   }
 
   onSelect(token: any) {

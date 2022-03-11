@@ -8,7 +8,7 @@ import { Subject } from 'rxjs';
 export class TokensArr {
   constructor(private http: HttpClient) {}
   tokensChanged = new Subject();
-
+  stacked = false;
   private tokens = [];
 
   setTokens(tokens: any) {
@@ -19,4 +19,18 @@ export class TokensArr {
   getTokens() {
     return this.tokens.slice();
   }
+
+  filterStaked() {
+    let tokensToFilter = this.getTokens();
+    if (!this.stacked) {
+      this.tokensChanged.next(tokensToFilter);
+    } else {
+      let tokensFiltered = tokensToFilter.filter(
+        (token: any) => token.multiplier < 2
+      );
+      this.tokensChanged.next(tokensFiltered);
+    }
+  }
+
+  filterLive() {}
 }

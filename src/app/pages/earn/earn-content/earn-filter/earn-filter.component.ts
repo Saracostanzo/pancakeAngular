@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { TokensArr } from 'src/app/services/Tokens.service';
 
 @Component({
   selector: 'pancake-earn-filter',
   templateUrl: './earn-filter.component.html',
-  styleUrls: ['./earn-filter.component.css']
+  styleUrls: ['./earn-filter.component.css'],
 })
 export class EarnFilterComponent implements OnInit {
+  constructor(private tokenService: TokensArr) {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  onStacked() {
+    this.tokenService.stacked = !this.tokenService.stacked;
+    this.tokenService.filterStaked();
+    console.log(this.tokenService.stacked);
   }
-
 }
