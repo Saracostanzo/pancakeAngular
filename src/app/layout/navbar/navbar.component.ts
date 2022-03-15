@@ -23,4 +23,7 @@ valueRandom(){
   this.value = Math.floor((Math.random() * (20000-10000)) +10000)
   setInterval(this.valueRandom, 3000)
 }
+changeLang(lang:any){
+console.log(lang)
+}
 }

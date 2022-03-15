@@ -13,10 +13,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './pages/home/home.component';
 import { TabSwitchComponent } from './pages/home/tab-switch/tab-switch.component';
 import { TabCakeComponent } from './pages/home/tab-cake/tab-cake.component';
+import { AppRoutingModule } from 'src/app.routing.modules';
 
 @NgModule({
   declarations: [AppComponent, FooterComponent, DarkmodeComponent, EarnComponent, NavbarComponent, InfoComponent, GraficoComponent, HomeComponent, TabSwitchComponent, TabCakeComponent],
-  imports: [BrowserModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers:  [AuthService],
   bootstrap: [AppComponent],
 })
