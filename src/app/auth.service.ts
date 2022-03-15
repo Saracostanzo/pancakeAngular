@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient , HttpHeaders} from '@angular/common/http'
-import { lastValueFrom } from 'rxjs'
+import {HttpClient , HttpHeaders} from '@angular/common/http';
 
 
 // const apiKey="coinranking78e86ba84b6bf9e0068eaaa64860cb4b919cbdf0ea9655c2";

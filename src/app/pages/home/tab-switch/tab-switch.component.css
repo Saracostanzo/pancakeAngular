@@ -1,0 +1,149 @@
+.home-subsection5-tab-tod-farms{
+  padding: 24px;
+  padding-left: 48px;
+  display: grid;
+    max-height: 250px;
+    width: fit-content;
+    gap: 20px;
+
+}
+.tab-box-top-farm-syrup-pools {
+  display: flex;
+}
+.tab-scritta-top {
+  display: inline-flex;
+  gap: 5px;
+font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: rgb(40, 13, 95);
+}
+.tab-scritta-switch-farm-syrup-pools {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+color: rgb(118, 69, 217);
+}
+.tab-button-switch-farm-syrup-pools {
+  width: 48px;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  background-color: transparent;
+  color: rgb(31, 199, 212);
+  box-shadow: none;
+  height: 100%;
+}
+.tab-box-top-farm-syrup-pools{
+    display: grid;
+    margin-bottom: 24px;
+    padding-left: 16px;
+}
+.tab-scritta-top{
+  font-weight: 600;
+  line-height: 1.1;
+  color: rgb(40, 13, 95);
+}
+@media screen and (min-width: 968px){
+.tab-scritta-top{
+font-size: 20px;
+}
+}
+
+.tab-scritta-switch-farm{
+  color: rgb(118, 69, 217);
+}
+.tab-scritta-switch-syrup-pools{
+  color: rgb(118, 69, 217);
+
+}
+
+.home-container-text-switch-tab-farms{
+display: grid;
+grid-template-columns: repeat(5, auto);
+max-height:100px;
+}
+
+
+@media screen and (min-width: 852px){
+.home-container-text-switch-tab-farms{
+  gap: 32px;
+}
+}
+.home-container-text-switch-tab-syrup-pools{
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  max-height: 100px;
+  }
+
+
+  @media screen and (min-width: 852px){
+  .home-container-text-switch-tab-syrup-pools{
+    gap: 32px;
+  }
+  }
+
+.home-container-section-text-tab-farms{
+display: unset;
+top: 0px;
+opacity: 1;
+margin-top: 0px;
+padding-right: 16px;
+height: 80px;
+top: 0px;
+padding-left: 16px;
+border-left: 1px solid rgb(215, 202, 236);
+}
+
+.home-container-section-text-tab-syrup-pools{
+top: 0px;
+opacity: 1;
+padding-right: 16px;
+height: 80px;
+top: 0px;
+padding-left: 16px;
+border-left: 1px solid rgb(215, 202, 236);
+}
+
+.home-title-text-switch-taab-farms{
+color: rgb(118, 69, 217);
+font-size: 12px;
+}
+.home-value-switch-tab-farms{
+color: rgb(40, 13, 95);
+font-size: 16px;
+}
+.home-subtitle-switch-tab-farms{
+color: rgb(122, 110, 170);
+font-size: 16px;
+}
+
+.transitionDown{
+  opacity: 1;
+  margin-top: 0px;
+  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
+}
+.transitionUp{
+  opacity: 0;
+  margin-top: 50%;
+  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
+}
+.displayDown{
+display: none;
+}
+.displayUp{
+  display: unset;
+}

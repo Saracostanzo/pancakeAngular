@@ -10,11 +10,14 @@ import { InfoComponent } from './pages/info/info.component';
 import { GraficoComponent } from './pages/info/grafico/grafico.component';
 import { AuthService } from './auth.service';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './pages/home/home.component';
+import { TabSwitchComponent } from './pages/home/tab-switch/tab-switch.component';
+import { TabCakeComponent } from './pages/home/tab-cake/tab-cake.component';
 
 @NgModule({
-  declarations: [AppComponent, FooterComponent, DarkmodeComponent, EarnComponent, NavbarComponent, InfoComponent, GraficoComponent],
-  imports: [BrowserModule , HttpClientModule ],
-  providers: [AuthService],
+  declarations: [AppComponent, FooterComponent, DarkmodeComponent, EarnComponent, NavbarComponent, InfoComponent, GraficoComponent, HomeComponent, TabSwitchComponent, TabCakeComponent],
+  imports: [BrowserModule],
+  providers:  [AuthService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
