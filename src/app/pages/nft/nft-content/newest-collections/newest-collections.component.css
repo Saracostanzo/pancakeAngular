@@ -1,0 +1,121 @@
+.nft-txt-view-all-flx {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.nft-collection-mrg-bt {
+  margin-bottom: 32px;
+}
+
+.nft-title-col {
+  color: rgb(40, 13, 95);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.nft-txt-sz {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.nft-view-all-btn {
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 32px;
+  padding: 0px 16px;
+  background-color: transparent;
+  border: 2px solid rgb(31, 199, 212);
+  box-shadow: none;
+  color: rgb(31, 199, 212);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nft-arrow-sv {
+  align-self: center;
+  fill: rgb(31, 199, 212);
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+
+@media screen and (min-width: 968px) {
+  .nft-txt-sz {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 852px) {
+    .CeGNK {
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .CeGNK {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 370px) {
+    .CeGNK {
+      grid-template-columns: 1fr;
+    }
+}
+
+.CeGNK {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+.izXgkt {
+  margin-bottom: 64px;
+}
+
+.ntf__card-or__wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+  overflow: inherit;
+}
+
+.ntf__card-or-card {
+  width: 95%;
+}
+
+.ntf__card-or__hero {
+  padding-top: 8px;
+}
+
+.ntf__card-or__card-cont__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  transform: translateY(-35%);
+}
