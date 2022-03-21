@@ -8,6 +8,7 @@ const routers: Routes=[
   {path:"home", component: HomeComponent },
   {path:"info", component: InfoComponent },
   {path:"earn", component: EarnComponent },
+  {path:"", redirectTo:"/home", pathMatch:"full"}
 ];
 @NgModule({
 imports:[
