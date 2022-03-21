@@ -18,17 +18,14 @@
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
-<<<<<<< HEAD
     "angular-highcharts": "^13.0.1",
     "bootstrap": "^5.1.3",
     "chart.js": "^3.7.1",
     "highcharts": "^9.3.3",
     "highcharts-angular": "^3.0.0",
     "rxjs": "~7.5.0",
-=======
-    "rxjs": "^6.6.7",
     "rxjs-compat": "^6.6.7",
->>>>>>> earn
+
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
