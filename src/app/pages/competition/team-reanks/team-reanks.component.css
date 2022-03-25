@@ -1375,13 +1375,37 @@
 
 
 
+.comp-foot-bg-sty {
+  background: rgb(25, 19, 38);
+  z-index: 6;
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+}
 
+.comp-foot-tops-conv {
+  width: 100%;
+  height: 20px;
+  clip-path: url(#topConvexCurve);
+  background: rgb(250, 249, 250);
+  transform: translate(0px, -1px);
+}
 
+.comp-foot-pos-flx {
+  position: relative;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  z-index: 5;
+  background: radial-gradient(329.58% 50% at 50% 50%, rgb(59, 40, 100) 0%, rgb(25, 19, 38) 100%);
+  padding: 14px 0px 48px;
+}
 
-
-
-
-
+.comp-foot-mh {
+  min-height: auto;
+}
 
 .comp-foot-cont-m-lr {
   max-width: 1200px;
@@ -1389,9 +1413,15 @@
   margin-right: auto;
 }
 
+.comp-foot-flx-ctr {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
 
-
-
+.comp-foot-fit-cnt {
+  height: fit-content;
+}
 
 
 @media screen and (min-width: 1080px) {

@@ -1,0 +1,159 @@
+.comp-flex {
+  display: flex;
+}
+
+.comp-foot-bg-sty {
+  background: rgb(25, 19, 38);
+  z-index: 6;
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.comp-foot-tops-conv {
+  width: 100%;
+  height: 20px;
+  clip-path: url(#topConvexCurve);
+  background: rgb(250, 249, 250);
+  transform: translate(0px, -1px);
+}
+
+.comp-foot-pos-flx {
+  position: relative;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  z-index: 5;
+  background: radial-gradient(329.58% 50% at 50% 50%, rgb(59, 40, 100) 0%, rgb(25, 19, 38) 100%);
+  padding: 14px 0px 48px;
+}
+
+.comp-pad-gen {
+  padding-top: 32px;
+  padding-bottom: 32px
+}
+
+.comp-foot-mh {
+  min-height: auto;
+}
+
+ .comp-foot-cont-m-lr {
+   padding-left: 24px;
+   padding-right: 24px
+ }
+
+ .comp-foot-flx-ctr {
+   display: flex;
+   -webkit-box-align: center;
+   align-items: center;
+ }
+
+ .comp-foot-fit-cnt {
+   height: fit-content;
+ }
+
+ .comp-fin-sty {
+   display: inline-flex;
+   background: linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%);
+   border-radius: 24px;
+   color: rgb(40, 13, 95);
+   overflow: hidden;
+   position: relative;
+   padding: 1px 1px 3px;
+ }
+
+ .comp-fin-sh {
+   background: transparent;
+ }
+
+ .comp-sec-h-s {
+   width: 100%;
+   height: 100%;
+   overflow: inherit;
+   border-radius: 24px;
+ }
+
+ .comp-sec-pad {
+   padding: 24px;
+ }
+
+ .comp-sec-con-pos {
+   display: flex;
+   flex-direction: column;
+   -webkit-box-pack: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   align-items: center;
+ }
+
+ .comp-con-tx-sty {
+   text-align: center;
+   line-height: 110%;
+   color: rgb(255, 255, 255);
+   text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+   background: linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%) text;
+   -webkit-text-stroke: 4px transparent;
+   white-space: normal;
+ }
+
+ .comp-con-tx-sz {
+   font-size: 40px;
+ }
+
+ .comp-con-svg-btn {
+   display: flex;
+   align-items: flex-end;
+ }
+
+ .comp-twig-svg-sty {
+   margin-bottom: 6px;
+   height: 32px;
+   width: auto;
+   fill: rgb(255, 178, 55);
+ }
+
+ .buttonStandard {
+   border-radius: 16px;
+   border: 0px;
+   font-size: var(--font-size);
+   font-weight: var(--font-weigth);
+   height: 50px;
+   background-color: var(--secundary-color);
+   color: white;
+   box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+   cursor: pointer;
+   letter-spacing: 0.03em;
+   line-height: 1;
+   width: 165px;
+   height: 48px;
+   opacity: 1;
+ }
+
+ .comp-btn-dis-sty {
+   background-color: rgb(233, 234, 235);
+   border-color: rgb(233, 234, 235);
+   box-shadow: none;
+   color: rgb(189, 194, 196);
+   cursor: not-allowed;
+ }
+
+ .comp-btn-marg {
+   margin: 16px 20px 0px;
+   z-index: 200;
+ }
+
+@media screen and (min-width: 968px) {
+  .comp-pad-gen {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+     .comp-pad-gen {
+       padding-top: 32px;
+       padding-bottom: 32px
+     }
+}
