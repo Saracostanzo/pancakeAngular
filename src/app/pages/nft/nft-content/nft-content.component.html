@@ -1,21 +1,27 @@
 <div>
-    <div class="nft-cnt-ln-sty">
-      <div clip-path="#topConcaveCurve" class="nft-top-conv">
-          <svg width="0" height="0">
-          <defs>
-            <clipPath id="topConcaveCurve" clipPathUnits="objectBoundingBox">
-              <path d="M 0,0 L 0,1 L 1,1 L 1,0 C .75 1, .25 1, 0 0 Z"></path>
-            </clipPath>
-          </defs>
-        </svg>
+  <div class="nft-cnt-ln-sty">
+    <div clip-path="#topConcaveCurve" class="nft-top-conv">
+      <svg width="0" height="0">
+        <defs>
+          <clipPath id="topConcaveCurve" clipPathUnits="objectBoundingBox">
+            <path d="M 0,0 L 0,1 L 1,1 L 1,0 C .75 1, .25 1, 0 0 Z"></path>
+          </clipPath>
+        </defs>
+      </svg>
     </div>
-    </div>
-    <div class="nft-content-container d-flex nft-content-bg">
-        <div class="nft-cnt-mrg-wth nft-cnt-mn-hght-pad nft-cnt-mn-hght-pad">
-            <pancake-newest-collections></pancake-newest-collections>
-            <pancake-hot-collections></pancake-hot-collections>
-            <pancake-newest-arrivals></pancake-newest-arrivals>
-            <pancake-faqs></pancake-faqs>
+  </div>
+  <div class="d-flex nft-content-container">
+    <div class="nft-cnt-mn-hght-pad nft-cnt-mn-hght-pad nft-cnt-mx-wth-pad nft-cnt-mrg-wth">
+      <div class="nft-cnt-bg-pos d-flex">
+        <div class="nft-cnt-mn-hght-pad nft-cnt-mn-hght-pad">
+          <pancake-newest-collections></pancake-newest-collections>
+          <pancake-hot-collections></pancake-hot-collections>
+          <pancake-newest-arrivals></pancake-newest-arrivals>
         </div>
+      </div>
     </div>
+  </div>
+  <div class="nft-faqs-bg-col nft-faqs-bg-pad">
+  <pancake-faqs></pancake-faqs>
+  </div>
 </div>

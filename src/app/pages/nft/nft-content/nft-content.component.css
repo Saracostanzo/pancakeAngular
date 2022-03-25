@@ -17,7 +17,7 @@
 }
 
 .nft-top-conv svg {
-      display: block;
+  display: block;
 }
 
 .nft-content-container {
@@ -32,10 +32,6 @@
 
 .d-flex {
   display: flex;
-}
-
-.nft-content-bg {
-  background: rgb(250, 249, 250);
 }
 
 .nft-cnt-mrg-wth {
@@ -57,26 +53,41 @@
   margin-right: auto;
 }
 
-@media screen and (min-width: 968px) {
-.nft-cnt-mn-hght-pad {
-  padding-top: 48px;
-  padding-bottom: 48px;
+.nft-cnt-bg-pos {
+  position: relative;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  z-index: 0;
+  background: rgb(250, 249, 250);
+  padding: 14px 0px 48px;
 }
+
+.nft-faqs-bg-col {
+  background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+}
+
+.nft-faqs-bg-pad {
+  padding: 64px 0px;
+}
+
+@media screen and (min-width: 968px) {
+  .nft-cnt-mn-hght-pad {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }
 
 @media screen and (min-width: 576px) {
-.nft-cnt-mn-hght-pad {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
+  .nft-cnt-mn-hght-pad {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 @media screen and (min-width: 370px) {
-.nft-cnt-mx-wth-pad {
-  padding-left: 24px;
-  padding-right: 24px;
+  .nft-cnt-mx-wth-pad {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
-
-}
-
