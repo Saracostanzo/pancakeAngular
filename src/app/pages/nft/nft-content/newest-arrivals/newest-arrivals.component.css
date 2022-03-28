@@ -39,13 +39,23 @@
   line-height: 1;
   opacity: 1;
   outline: 0px;
-  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
   height: 32px;
   padding: 0px 16px;
   background-color: transparent;
   border: 2px solid rgb(31, 199, 212);
   box-shadow: none;
   color: rgb(31, 199, 212);
+}
+
+.nft-view-all-btn:hover {
+  opacity: 0.65;
+  transition: 0.2s ease 0s;
+}
+
+.nft-view-all-btn:active {
+  opacity: 0.85;
+  transform: translateY(1px);
+  box-shadow: none;
 }
 
 .nft-arrow-svg {
@@ -58,13 +68,17 @@
 .nft-new-coll-d-grd-tmp-col {
   display: grid;
   gap: 24px 16px;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .nft-new-coll-card-brdr {
     border-radius: 8px;
     max-width: 320px;
-    transition: opacity 200ms ease 0s;
+}
+
+.nft-new-coll-card-brdr:hover {
+  opacity: .6;
+  transition: 200ms ease 0s;
 }
 
 .nft-new-coll-card-sty {
@@ -197,11 +211,6 @@ a {
     }
 }
 
-@media screen and (min-width: 852px) {
-  .nft-new-coll-d-grd-tmp-col {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
 
 @media screen and (max-width: 851px) {
     .nft-new-coll-d-grd-tmp-col {
@@ -209,7 +218,7 @@ a {
     }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 369px) {
     .nft-new-coll-d-grd-tmp-col {
       grid-template-columns: 1fr;
     }

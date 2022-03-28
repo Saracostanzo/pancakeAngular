@@ -38,13 +38,23 @@
   line-height: 1;
   opacity: 1;
   outline: 0px;
-  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
   height: 32px;
   padding: 0px 16px;
   background-color: transparent;
   border: 2px solid rgb(31, 199, 212);
   box-shadow: none;
   color: rgb(31, 199, 212);
+}
+
+.nft-view-all-btn:hover {
+  opacity: 0.65;
+  transition: 0.2s ease 0s;
+}
+
+.nft-view-all-btn:active {
+  opacity: 0.85;
+  transform: translateY(1px);
+  box-shadow: none;
 }
 
 .nft-arrow-svg {
@@ -57,7 +67,7 @@
 .nft-d-grd-tmp-col {
   display: grid;
   gap: 16px;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .nft-gen-mrg-bot {
@@ -73,9 +83,13 @@
   padding: 1px 1px 3px;
 }
 
+.nft-coll-card-bg:hover {
+  opacity: 0.6;
+  transition: 200ms ease 0s;
+}
+
 .nft-coll-card-brdr {
   border-radius: 8px 8px 8px 56px;
-  transition: opacity 200ms ease 0s;
 }
 
 
@@ -198,12 +212,6 @@ a {
 
   .nft-txt-sz {
     font-size: 20px;
-  }
-}
-
-@media screen and (min-width: 852px) {
-  .nft-d-grd-tmp-col {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 
