@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TokensArr } from 'src/app/services/Tokens.service';
+import { TokensArr } from 'src/app/pages/earn/services/Tokens.service';
 
 @Component({
   selector: 'pancake-earn-filter',

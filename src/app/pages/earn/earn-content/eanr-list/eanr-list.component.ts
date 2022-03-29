@@ -1,7 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { TokensArr } from 'src/app/services/Tokens.service';
+import { TokensArr } from 'src/app/pages/earn/services/Tokens.service';
 import { map } from 'rxjs/operators';
-import { HttpService } from 'src/app/services/HttpService';
+import { HttpService } from 'src/app/pages/earn/services/HttpService';
 import { Subscription } from 'rxjs';
 
 @Component({

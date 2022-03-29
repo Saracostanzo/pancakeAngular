@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpService } from 'src/app/services/HttpService';
+import { HttpService } from 'src/app/pages/earn/services/HttpService';
 
 @Component({
   selector: 'pancake-earn-content',

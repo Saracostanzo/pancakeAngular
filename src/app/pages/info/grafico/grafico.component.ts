@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { AuthService } from 'src/app/auth.service';
+import { AuthService } from 'src/app/pages/info/services/auth.service';
 import { Chart, registerables } from 'chart.js';
 
 @Component({

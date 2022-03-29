@@ -1,0 +1,61 @@
+<div class="container-principale">
+  <div class="info-tab-overview">
+    <div class="tab-version-box info-tab-version-box">
+      <a href="#"routerLink="/info"><button class="tab-button-v1">Overview</button></a>
+      <a href="#"routerLink="/allPools"> <button class="tab-button-v2-active">Pools</button></a>
+      <a href="#"routerLink="/allTokens"> <button class="tab-button-v1">Tokens</button></a>
+    </div>
+    <div class="info-input-search">
+      <input placeholder="Search pools or tokens" scale="md" class="input-search__input " value="">
+    </div>
+  </div>
+<h2 class="info-title-tokens-list"> All Pools</h2>
+<div class="info-components-tokens-container">
+  <div class="info-components-tokens-header-lay">
+    <div class="components-tokens-hashtag">#</div>
+
+    <div class="components-tokens-header-text">POOL</div>
+    <div class="components-tokens-header-text">VOLUME 24H↓</div>
+    <div class="components-tokens-header-text">VOLUME 7D</div>
+    <div class="components-tokens-header-text">LP REWARD FEES 24H</div>
+    <div class="components-tokens-header-text">LP REWARD APR</div>
+    <div class="components-tokens-header-text">LIQUIDITY</div>
+  </div>
+  <div class="components-tokens-border"></div>
+  <div class="components-tokens-a" *ngFor = "let iter1 of iters">
+    <div class="info-components-tokens-a-content">
+      <div class="components-tokens-number-lay">
+        <div class="components-tokens-number-sty">{{iter1.rank}}</div>
+      </div>
+      <div class="components-tokens-first-text-lay">
+        <img src="../../../assets/img/questionMark.svg">
+        <img class="components-tokens-img" alt="token logo"
+          src={{iter1.iconUrl}}>
+        <div class="components-tokens-first-text-lay2">
+          <div class="components-tokens-text-out-sty">
+            {{iter1.symbol}}
+          </div>
+          <div class="components-tokens-text-in-sty"></div>
+        </div>
+      </div>
+      <div class="components-tokens-text-out-sty">${{iter1.marketCap}}</div>
+      <div class="components-tokens-text-out-sty">
+        <div class="info-components-tokens-text-failure ">${{iter1.price}}</div>
+      </div>
+      <div class="components-tokens-text-out-sty">${{iter1.listedAt}}</div>
+      <div class="components-tokens-text-out-sty">{{iter1.change}}%</div>
+      <div class="components-tokens-text-out-sty">${{iter1.price}}</div>
+    </div>
+  <div class="components-tokens-border"></div>
+  </div>
+  <div class="componnents-tokens-foot-lay">
+    <div class="components-tokens-l-arrow">
+      <img src="../../../assets/img/freccia-sx.svg">
+    </div>
+    <div class="components-tokens-text-out-sty">Page 1 of 6</div>
+    <div class="components-tokens-arrows-sty">
+      <img src="../../../assets/img/freccia-dx.svg">
+    </div>
+  </div>
+</div>
+</div>
