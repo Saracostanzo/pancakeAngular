@@ -18,6 +18,8 @@ import { TabCakeComponent } from './pages/home/tab-cake/tab-cake.component';
 import { TabSwitchComponent } from './pages/home/tab-switch/tab-switch.component';
 import { AuthService } from './pages/info/services/auth.service';
 import { InfoModule } from './pages/info/services/info.module';
+import { VotingContainerComponent } from './pages/voting/voting-container/voting-container.component';
+
 
 
 
@@ -37,6 +39,7 @@ import { InfoModule } from './pages/info/services/info.module';
             HomeComponent,
              TabSwitchComponent,
               TabCakeComponent,
+              VotingContainerComponent,
 
             ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, InfoModule],

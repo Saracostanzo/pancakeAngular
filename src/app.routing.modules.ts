@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import{Routes , RouterModule}from "@angular/router";
 import { EarnComponent } from "./app/pages/earn/earn.component";
 import { HomeComponent } from "./app/pages/home/home.component";
+import { VotingContainerComponent } from "./app/pages/voting/voting-container/voting-container.component";
 
 const routers: Routes=[
   {path:"home", component: HomeComponent },
@@ -10,7 +11,9 @@ const routers: Routes=[
     loadChildren: () => import('./app/pages/info/services/info.module').then(m => m.InfoModule),
   },
   {path:"earn", component: EarnComponent },
+  {path:"voting", component: VotingContainerComponent },
   {path:"", redirectTo:"/home", pathMatch:"full"}
+
 ];
 @NgModule({
 imports:[
