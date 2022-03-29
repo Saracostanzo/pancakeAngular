@@ -329,6 +329,9 @@ margin-left: 50px;
   background-color: rgb(49, 208, 170);
 }
 
+*{
+  font-family: Kanit, sans-serif;
+}
 .input-selector__radio:checked:after {
   content: '';
   display: block;

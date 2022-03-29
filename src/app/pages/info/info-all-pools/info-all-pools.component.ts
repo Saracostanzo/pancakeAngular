@@ -36,4 +36,6 @@ export class InfoAllPoolsComponent implements OnInit {
         });
 
       }
+
+
     }

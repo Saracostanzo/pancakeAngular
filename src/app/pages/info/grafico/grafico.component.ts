@@ -1,6 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { AuthService } from 'src/app/pages/info/services/auth.service';
+
 import { Chart, registerables } from 'chart.js';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'pancake-grafico',
