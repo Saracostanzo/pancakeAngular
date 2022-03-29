@@ -7,7 +7,7 @@ import { GraficoComponent } from '../grafico/grafico.component';
 import { InfoOutletComponent } from '../info-outlet/info-outlet.component';
 import { InfoRoutingModule } from './info.routing.module';
 import { InfoAllPoolsComponent } from '../info-all-pools/info-all-pools.component';
-import { InfoAllTokensComponent } from '../../info-all-tokens/info.all-tokens.component';
+import { InfoAllTokensComponent } from '../info-all-tokens/info.all-tokens.component';
 
 
 

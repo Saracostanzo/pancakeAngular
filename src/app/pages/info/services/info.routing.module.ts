@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { InfoAllTokensComponent } from '../../info-all-tokens/info.all-tokens.component';
+import { InfoAllTokensComponent } from '../info-all-tokens/info.all-tokens.component';
 import { GraficoComponent } from '../grafico/grafico.component';
 import { InfoAllPoolsComponent } from '../info-all-pools/info-all-pools.component';
 import { InfoOutletComponent } from '../info-outlet/info-outlet.component';
