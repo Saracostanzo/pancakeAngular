@@ -1,6 +1,8 @@
 import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import { Observable, Subscription } from 'rxjs';
 import { AuthService } from 'src/app/pages/info/services/auth.service';
+import { Tokens } from './services/interface-token';
 
 @Component({
   selector: 'pancake-info',
@@ -8,9 +10,9 @@ import { AuthService } from 'src/app/pages/info/services/auth.service';
   styleUrls: ['./info.component.css']
 })
 export class InfoComponent implements OnInit {
+  tokens$!: Observable<Tokens[]>;
 
-obj:any
-iters:any;
+
 transaction:any=[
   {
 add:"Add",
@@ -22,20 +24,7 @@ removes:"Removes"
  constructor(private service: AuthService) { }
 
   ngOnInit(): void {
-    this.service.cryptoData().then((res)=>{
-      this.obj=res
-      this.iters=this.obj.data.coins
-      this.iters.forEach((element:any) => {
-        element.price= Math.round(element.price)
-        element.marketCap= Math.round(element.marketCap)
-        element.btcPrice= Math.round(element.btcPrice)
-        element.listedAt= Math.round(element.listedAt)
-         console.log(this.iters)
-        })
-
-
-      });
-
+    this.tokens$ = this.service.getAllToken()
     }
   }
 

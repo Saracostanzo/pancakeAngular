@@ -1,4 +1,4 @@
-<div class="container-principale">
+<div class="container-principale"*ngIf="(tokens$ | async) as iters;">
   <div class="info-tab-overview">
     <div class="tab-version-box info-tab-version-box">
       <a href="#"routerLink="/info"><button class="tab-button-v1">Overview</button></a>

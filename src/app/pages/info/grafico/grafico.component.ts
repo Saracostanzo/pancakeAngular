@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-
 import { Chart, registerables } from 'chart.js';
+import { map } from 'highcharts';
 import { AuthService } from '../services/auth.service';
 
 @Component({
@@ -23,19 +23,19 @@ chart1:any=[]
 
   ngOnInit(): void {
 
-    this.service.cryptoData().then((res)=>{
-      this.result=res
-      this.coinPrice= this.result.data.coins[0].sparkline;
-      this.l= Math.round(this.coinPrice[0])
-      this.volume24H= this.result.data.coins[1].sparkline;
-      this.v=Math.round(this.volume24H[0])
+
+    this.service.getAllToken().subscribe((res)=>{
+      this.v=res[0].price;
+      this.l=res[0].listedAt
+      this.coinPrice= res.map(({ price }) => price)
+      this.volume24H= res. map(({ listedAt }) => listedAt)
       this.chart= new Chart('canvas',{
         type:'line',
         data:{
-          labels:[ '05','25','11','29','17','05','25','11','29','18','06','26','14','31','17','05','25'],
+          labels:this.coinPrice,
           datasets: [{
             label: 'Liquidity',
-            data: this.coinPrice,
+            data: this.volume24H,
             backgroundColor:'rgba(122, 110, 170,0.5)',
             borderColor: 'rgba(122, 110, 170)',
             fill: true,

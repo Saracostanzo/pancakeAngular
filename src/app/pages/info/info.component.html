@@ -1,4 +1,4 @@
-<div class="container-principale">
+<div class="container-principale" *ngIf="(tokens$ | async) as iters;">
   <div class="info-tab-overview">
     <div class="tab-version-box info-tab-version-box">
       <a href="#"routerLink="/info"><button class="tab-button-v2-active">Overview</button></a>
@@ -77,29 +77,29 @@
         <div class="components-tokens-header-text">LIQUIDITY</div>
       </div>
       <div class="components-tokens-border"></div>
-      <div class="components-tokens-a" *ngFor = "let iter1 of iters">
+      <div class="components-tokens-a" *ngFor = "let iter of iters">
         <div class="info-components-tokens-a-content">
           <div class="components-tokens-number-lay">
-            <div class="components-tokens-number-sty">{{iter1.rank}}</div>
+            <div class="components-tokens-number-sty">{{iter.rank}}</div>
           </div>
           <div class="components-tokens-first-text-lay">
             <img src="../../../assets/img/questionMark.svg">
             <img class="components-tokens-img" alt="token logo"
-              src={{iter1.iconUrl}}>
+              src={{iter.iconUrl}}>
             <div class="components-tokens-first-text-lay2">
               <div class="components-tokens-text-out-sty">
-                {{iter1.symbol}}
+                {{iter.symbol}}
               </div>
               <div class="components-tokens-text-in-sty"></div>
             </div>
           </div>
-          <div class="components-tokens-text-out-sty">${{iter1.marketCap}}</div>
+          <div class="components-tokens-text-out-sty">${{iter.marketCap}}</div>
           <div class="components-tokens-text-out-sty">
-            <div class="info-components-tokens-text-failure ">${{iter1.price}}</div>
+            <div class="info-components-tokens-text-failure ">${{iter.price}}</div>
           </div>
-          <div class="components-tokens-text-out-sty">${{iter1.listedAt}}</div>
-          <div class="components-tokens-text-out-sty">{{iter1.change}}%</div>
-          <div class="components-tokens-text-out-sty">${{iter1.price}}</div>
+          <div class="components-tokens-text-out-sty">${{iter.listedAt}}</div>
+          <div class="components-tokens-text-out-sty">{{iter.change}}%</div>
+          <div class="components-tokens-text-out-sty">${{iter.price}}</div>
         </div>
       <div class="components-tokens-border"></div>
       </div>
@@ -159,7 +159,7 @@
           <div class="components-tokens-first-text-lay">
             <div class="components-tokens-first-text-lay2">
               <a class="components-tokens-text-out-sty components-tokens-text-out-stya px"[href]="iter.coinrankingUrl" *ngFor="let trans of transaction">
-               {{trans.swaps}} {{iter.symbol}}
+               {{transaction.swaps}} {{iter.symbol}}
                <img src="../../../assets/img/collegamento-token.svg" >
               </a>
               <div class="components-tokens-text-in-sty"></div>
@@ -185,7 +185,7 @@
           <div class="components-tokens-first-text-lay">
             <div class="components-tokens-first-text-lay2">
               <a class="components-tokens-text-out-sty components-tokens-text-out-stya px"[href]="iter.coinrankingUrl" *ngFor="let trans of transaction">
-               {{trans.add}} {{iter.symbol}}
+               {{transaction.add}} {{iter.symbol}}
                <img src="../../../assets/img/collegamento-token.svg" >
               </a>
               <div class="components-tokens-text-in-sty"></div>
@@ -211,7 +211,7 @@
           <div class="components-tokens-first-text-lay">
             <div class="components-tokens-first-text-lay2">
               <a class="components-tokens-text-out-sty components-tokens-text-out-stya px"[href]="iter.coinrankingUrl" *ngFor="let trans of transaction">
-               {{trans.removes}} {{iter.symbol}}
+               {{transaction.removes}} {{iter.symbol}}
                <img src="../../../assets/img/collegamento-token.svg" >
               </a>
               <div class="components-tokens-text-in-sty"></div>
@@ -241,6 +241,5 @@
     </div>
 </div>
 </div>
-
 
 
