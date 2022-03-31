@@ -3,9 +3,11 @@ import{Routes , RouterModule}from "@angular/router";
 import { EarnComponent } from "./app/pages/earn/earn.component";
 import { HomeComponent } from "./app/pages/home/home.component";
 import { VotingContainerComponent } from "./app/pages/voting/voting-container/voting-container.component";
+import { TradeHomeSwapComponent } from "./app/trade-home-swap/trade-home-swap.component";
 
 const routers: Routes=[
   {path:"home", component: HomeComponent },
+  {path:"trade", component: TradeHomeSwapComponent },
   {
     path: 'info',
     loadChildren: () => import('./app/pages/info/services/info.module').then(m => m.InfoModule),

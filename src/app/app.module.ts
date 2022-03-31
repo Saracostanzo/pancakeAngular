@@ -21,6 +21,7 @@ import { InfoModule } from './pages/info/services/info.module';
 import { VotingModule } from './pages/voting/services/voting.module';
 import { VotingService } from './pages/voting/services/voting.service.module';
 import { VotingContainerComponent } from './pages/voting/voting-container/voting-container.component';
+import { TradeHomeSwapComponent } from './trade-home-swap/trade-home-swap.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { VotingContainerComponent } from './pages/voting/voting-container/voting
     HomeComponent,
     TabSwitchComponent,
     TabCakeComponent,
+    TradeHomeSwapComponent,
   ],
   imports: [
     BrowserModule,
