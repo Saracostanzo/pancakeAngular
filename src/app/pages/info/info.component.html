@@ -1,4 +1,4 @@
-<div class="container-principale" *ngIf="(tokens$ | async) as iters;">
+<div class="container-principale">
   <div class="info-tab-overview">
     <div class="tab-version-box info-tab-version-box">
       <a href="#"routerLink="/info"><button class="tab-button-v2-active">Overview</button></a>
@@ -24,7 +24,7 @@
         <div class="components-tokens-header-text">LIQUIDITY</div>
       </div>
       <div class="components-tokens-border"></div>
-      <div class="components-tokens-a" href="#"*ngFor = "let iter of iters">
+      <div class="components-tokens-a" href="#"*ngFor="let iter of iters | paginate: { itemsPerPage: 10, currentPage: page, totalItems: totalLength }">
         <div class="components-tokens-a-content">
           <div class="components-tokens-number-lay">
             <div class="components-tokens-number-sty">{{iter.rank}}</div>
@@ -54,14 +54,16 @@
       <div class="components-tokens-border"></div>
       </div>
       <div class="componnents-tokens-foot-lay">
-        <div class="components-tokens-l-arrow">
+        <pagination-controls class="my-pagination" (pageChange)="page = $event"></pagination-controls>
+        <!-- <div class="components-tokens-l-arrow">
           <img src="../../../assets/img/freccia-sx.svg">
         </div>
         <div class="components-tokens-text-out-sty">Page 1 of 3</div>
         <div class="components-tokens-arrows-sty">
           <img src="../../../assets/img/freccia-dx-azzurra.svg">
-        </div>
+        </div> -->
       </div>
+
     </div>
 
   <h2 class="info-title-tokens-list">Top Pools</h2>
@@ -77,7 +79,7 @@
         <div class="components-tokens-header-text">LIQUIDITY</div>
       </div>
       <div class="components-tokens-border"></div>
-      <div class="components-tokens-a" *ngFor = "let iter of iters">
+      <div class="components-tokens-a" *ngFor="let iter of iters | paginate: { itemsPerPage: 10, currentPage: page, totalItems: totalLength }">
         <div class="info-components-tokens-a-content">
           <div class="components-tokens-number-lay">
             <div class="components-tokens-number-sty">{{iter.rank}}</div>
@@ -104,14 +106,16 @@
       <div class="components-tokens-border"></div>
       </div>
       <div class="componnents-tokens-foot-lay">
-        <div class="components-tokens-l-arrow">
+        <pagination-controls class="my-pagination" (pageChange)="page = $event"></pagination-controls>
+        <!-- <div class="components-tokens-l-arrow">
           <img src="../../../assets/img/freccia-sx.svg">
         </div>
         <div class="components-tokens-text-out-sty">Page 1 of 6</div>
         <div class="components-tokens-arrows-sty">
           <img src="../../../assets/img/freccia-dx-azzurra.svg">
-        </div>
+        </div> -->
       </div>
+
     </div>
 
 
@@ -151,67 +155,15 @@
         <div class="components-tokens-header-text">TIME↓</div>
       </div>
       <div class="components-tokens-border"></div>
-      <div class="components-tokens-a" *ngFor = "let iter of iters">
+      <div class="components-tokens-a" *ngFor="let iter of iters | paginate: { itemsPerPage: 10, currentPage: page, totalItems: totalLength }">
         <div class="info-components-tokens-a-content">
           <div class="components-tokens-number-lay">
             <div class="components-tokens-number-sty"></div>
           </div>
           <div class="components-tokens-first-text-lay">
             <div class="components-tokens-first-text-lay2">
-              <a class="components-tokens-text-out-sty components-tokens-text-out-stya px"[href]="iter.coinrankingUrl" *ngFor="let trans of transaction">
-               {{transaction.swaps}} {{iter.symbol}}
-               <img src="../../../assets/img/collegamento-token.svg" >
-              </a>
-              <div class="components-tokens-text-in-sty"></div>
-            </div>
-          </div>
-          <div class="components-tokens-text-out-sty">${{iter.marketCap}}</div>
-          <div class="components-tokens-text-out-sty">
-            <div class="info-components-tokens-text-failure ">${{iter.price}}</div>
-          </div>
-          <div class="components-tokens-text-out-sty">${{iter.listedAt}}</div>
-          <a class="components-tokens-text-out-sty components-tokens-text-out-stya"[href]="iter.coinrankingUrl">0x02...e1ce
-            <img src="../../../assets/img/collegamento-token.svg" >
-          </a>
-          <div class="components-tokens-text-out-sty">1 day</div>
-        </div>
-      <div class="components-tokens-border"></div>
-      </div>
-      <div class="components-tokens-a" *ngFor = "let iter of iters">
-        <div class="info-components-tokens-a-content">
-          <div class="components-tokens-number-lay">
-            <div class="components-tokens-number-sty"></div>
-          </div>
-          <div class="components-tokens-first-text-lay">
-            <div class="components-tokens-first-text-lay2">
-              <a class="components-tokens-text-out-sty components-tokens-text-out-stya px"[href]="iter.coinrankingUrl" *ngFor="let trans of transaction">
-               {{transaction.add}} {{iter.symbol}}
-               <img src="../../../assets/img/collegamento-token.svg" >
-              </a>
-              <div class="components-tokens-text-in-sty"></div>
-            </div>
-          </div>
-          <div class="components-tokens-text-out-sty">${{iter.marketCap}}</div>
-          <div class="components-tokens-text-out-sty">
-            <div class="info-components-tokens-text-failure ">${{iter.price}}</div>
-          </div>
-          <div class="components-tokens-text-out-sty">${{iter.listedAt}}</div>
-          <a class="components-tokens-text-out-sty components-tokens-text-out-stya"[href]="iter.coinrankingUrl">0x02...e1ce
-            <img src="../../../assets/img/collegamento-token.svg" >
-          </a>
-          <div class="components-tokens-text-out-sty">1 day</div>
-        </div>
-      <div class="components-tokens-border"></div>
-      </div>
-      <div class="components-tokens-a" *ngFor = "let iter of iters">
-        <div class="info-components-tokens-a-content">
-          <div class="components-tokens-number-lay">
-            <div class="components-tokens-number-sty"></div>
-          </div>
-          <div class="components-tokens-first-text-lay">
-            <div class="components-tokens-first-text-lay2">
-              <a class="components-tokens-text-out-sty components-tokens-text-out-stya px"[href]="iter.coinrankingUrl" *ngFor="let trans of transaction">
-               {{transaction.removes}} {{iter.symbol}}
+              <a class="components-tokens-text-out-sty components-tokens-text-out-stya px"[href]="iter.coinrankingUrl">
+               {{iter.filter}} {{iter.symbol}}
                <img src="../../../assets/img/collegamento-token.svg" >
               </a>
               <div class="components-tokens-text-in-sty"></div>
@@ -230,15 +182,19 @@
       <div class="components-tokens-border"></div>
       </div>
       <div class="componnents-tokens-foot-lay">
-        <div class="components-tokens-l-arrow">
+        <pagination-controls class="my-pagination" (pageChange)="page = $event"></pagination-controls>
+        <!-- <div class="components-tokens-l-arrow">
           <img src="../../../assets/img/freccia-sx.svg">
         </div>
         <div class="components-tokens-text-out-sty">Page 1 of 10</div>
         <div class="components-tokens-arrows-sty">
           <img src="../../../assets/img/freccia-dx-azzurra.svg">
-        </div>
+        </div> -->
       </div>
+
     </div>
+
+
 </div>
 </div>
 

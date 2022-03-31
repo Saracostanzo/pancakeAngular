@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
 import { AuthService } from 'src/app/pages/info/services/auth.service';
 import { Tokens } from './services/interface-token';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 @Component({
   selector: 'pancake-info',
@@ -10,21 +11,17 @@ import { Tokens } from './services/interface-token';
   styleUrls: ['./info.component.css']
 })
 export class InfoComponent implements OnInit {
-  tokens$!: Observable<Tokens[]>;
+  iters:any;
+totalLength!:number;
+page:number=1;
 
-
-transaction:any=[
-  {
-add:"Add",
-swaps:"Swaps",
-removes:"Removes"
-  }
-]
 
  constructor(private service: AuthService) { }
 
   ngOnInit(): void {
-    this.tokens$ = this.service.getAllToken()
+    this.service.getAllToken().subscribe((res)=>this.iters= res)
+    this.totalLength= this.iters.length;
+
     }
   }
 

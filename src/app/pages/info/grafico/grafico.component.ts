@@ -17,7 +17,7 @@ l:any=[];
 v:any=[];
 chart:any=[]
 chart1:any=[]
-  constructor(private service: AuthService) {
+constructor(private service: AuthService) {
     Chart.register(...registerables)
    }
 

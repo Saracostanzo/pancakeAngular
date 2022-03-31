@@ -1,5 +1,8 @@
+import { PlotSeriesDataSortingOptions } from "highcharts"
+
 export interface Tokens {
     uuid: string ,
+    filter: string,
       symbol: string,
       name: string,
       color: string,

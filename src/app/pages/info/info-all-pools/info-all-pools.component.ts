@@ -10,24 +10,16 @@ import { Tokens } from '../services/interface-token';
 })
 export class InfoAllPoolsComponent implements OnInit {
 
-  tokens$!: Observable<Tokens[]>;
-coinPrice!:any
-   constructor(private service: AuthService) { }
-
-    ngOnInit(): void {
-      // this.service.cryptoData().then((res)=>{
-      //   this.obj=res
-      //   this.iters=this.obj.data.coins
-      //   this.iters.forEach((element:any) => {
-      //     element.price= Math.round(element.price)
-      //     element.marketCap= Math.round(element.marketCap)
-      //     element.btcPrice= Math.round(element.btcPrice)
-      //     element.listedAt= Math.round(element.listedAt)
-      //      console.log(this.iters)
-      //     })
+  iters:any;
+totalLength!:number;
+page:number=1;
 
 
-      //   });
-      this.tokens$ = this.service.getAllToken();
+ constructor(private service: AuthService) { }
+
+  ngOnInit(): void {
+    this.service.getAllToken().subscribe((res)=>this.iters= res)
+    this.totalLength= this.iters.length;
+
     }
 }

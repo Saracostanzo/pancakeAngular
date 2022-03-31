@@ -9,12 +9,17 @@ import { Tokens } from '../services/interface-token';
   styleUrls: ['./info-all-tokens.component.css', ]
 })
 export class InfoAllTokensComponent implements OnInit {
-  tokens$!: Observable<Tokens[]>;
+  iters:any;
+totalLength!:number;
+page:number=1;
 
 
-   constructor(private service: AuthService) { }
-       ngOnInit(): void {
-          this.tokens$ = this.service.getAllToken()
-          }
+ constructor(private service: AuthService) { }
+
+  ngOnInit(): void {
+    this.service.getAllToken().subscribe((res)=>this.iters= res)
+    this.totalLength= this.iters.length;
+
+    }
         }
 

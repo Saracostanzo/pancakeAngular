@@ -2,6 +2,7 @@
  "tokens": [
   {
       "uuid": "Qwsogvtv82FCd",
+      "filter":"Add",
       "symbol": "BTC",
       "name": "Bitcoin",
       "color": "#f7931A",
@@ -48,6 +49,7 @@
   },
   {
       "uuid": "razxDUgYGNAdQ",
+      "filter":"Add",
       "symbol": "ETH",
       "name": "Ethereum",
       "color": "#3C3C3D",
@@ -94,6 +96,7 @@
   },
   {
       "uuid": "HIVsRcGKkPFtW",
+      "filter":"Removes",
       "symbol": "USDT",
       "name": "Tether USD",
       "color": "#22a079",
@@ -140,6 +143,7 @@
   },
   {
       "uuid": "WcwrkfNI4FUAe",
+      "filter":"Add",
       "symbol": "BNB",
       "name": "Binance Coin",
       "color": "#e8b342",
@@ -186,6 +190,7 @@
   },
   {
       "uuid": "aKzUVe4Hh_CON",
+      "filter":"Swaps",
       "symbol": "USDC",
       "name": "USDC",
       "color": "#7894b4",
@@ -232,6 +237,7 @@
   },
   {
       "uuid": "9K7m6ufraZ6gh",
+      "filter":"Add",
       "symbol": "HEX",
       "name": "HEX",
       "color": "#ffcd00",
@@ -278,6 +284,7 @@
   },
   {
       "uuid": "-l8Mn2pVlRs-p",
+      "filter":"Removes",
       "symbol": "XRP",
       "name": "XRP",
       "color": "#000000",
@@ -324,6 +331,7 @@
   },
   {
       "uuid": "AaQUAs2Mc",
+      "filter":"Add",
       "symbol": "LUNA",
       "name": "Terra",
       "color": null,
@@ -370,6 +378,7 @@
   },
   {
       "uuid": "qzawljRxB5bYu",
+      "filter":"Add",
       "symbol": "ADA",
       "name": "Cardano",
       "color": "#3cc8c8",
@@ -416,6 +425,7 @@
   },
   {
       "uuid": "zNZHO_Sjf",
+      "filter":"Add",
       "symbol": "SOL",
       "name": "Solana",
       "color": null,
@@ -462,6 +472,7 @@
   },
   {
       "uuid": "25W7FG7om",
+      "filter":"Swaps",
       "symbol": "DOT",
       "name": "Polkadot",
       "color": "#d64cA8",
@@ -508,6 +519,7 @@
   },
   {
       "uuid": "dvUj0CzDZ",
+      "filter":"Removes",
       "symbol": "AVAX",
       "name": "Avalanche",
       "color": "#e84242",
@@ -554,6 +566,7 @@
   },
   {
       "uuid": "a91GCGd_u96cF",
+      "filter":"Swaps",
       "symbol": "DOGE",
       "name": "Dogecoin",
       "color": "#c2a633",
@@ -600,6 +613,7 @@
   },
   {
       "uuid": "vSo2fu9iE1s0Y",
+      "filter":"Swaps",
       "symbol": "BUSD",
       "name": "Binance USD",
       "color": "#f0b90b",
@@ -646,6 +660,7 @@
   },
   {
       "uuid": "xz24e0BjL",
+      "filter":"Swaps",
       "symbol": "SHIB",
       "name": "SHIBA INU",
       "color": "#fda32b",
@@ -692,6 +707,7 @@
   },
   {
       "uuid": "N2IgQ9Xme",
+      "filter":"Swaps",
       "symbol": "BIT",
       "name": "BitDAO ",
       "color": "#000000",
@@ -784,6 +800,7 @@
   },
   {
       "uuid": "uW2tk-ILY0ii",
+      "filter":"Swaps",
       "symbol": "MATIC",
       "name": "Polygon",
       "color": "#8247e5",
@@ -830,6 +847,7 @@
   },
   {
       "uuid": "cKExCczgV",
+      "filter":"Add",
       "symbol": "UST",
       "name": "TerraUSD",
       "color": "#0e3ca5",
@@ -876,6 +894,7 @@
   },
   {
       "uuid": "VINVMYf0u",
+      "filter":"Swaps",
       "symbol": "STETH",
       "name": "Lido Staked Ether",
       "color": "#41c0f5",
@@ -922,6 +941,7 @@
   },
   {
       "uuid": "MoTuySvg7",
+      "filter":"Swaps",
       "symbol": "DAI",
       "name": "Dai",
       "color": null,
@@ -968,6 +988,7 @@
   },
   {
       "uuid": "65PHZTpmE55b",
+      "filter":"Swaps",
       "symbol": "CRO",
       "name": "Cronos",
       "color": "#01275d",
@@ -1014,6 +1035,7 @@
   },
   {
       "uuid": "D7B1x_ks7WhV5",
+      "filter":"Swaps",
       "symbol": "LTC",
       "name": "Litecoin",
       "color": "#345d9d",
@@ -1060,6 +1082,7 @@
   },
   {
       "uuid": "Knsels4_Ol-Ny",
+      "filter":"Swaps",
       "symbol": "ATOM",
       "name": "Cosmos",
       "color": "#5064fb",
@@ -1106,6 +1129,7 @@
   },
   {
       "uuid": "DCrsaMv68",
+      "filter":"Swaps",
       "symbol": "NEAR",
       "name": "NEAR Protocol",
       "color": "#000000",
@@ -1152,6 +1176,7 @@
   },
   {
       "uuid": "izS9oU50GFfp",
+      "filter":"Swaps",
       "symbol": "ADMN",
       "name": "Adioman",
       "color": "#63c424",
@@ -1198,6 +1223,7 @@
   },
   {
       "uuid": "VLqpJwogdhHNb",
+      "filter":"Swaps",
       "symbol": "LINK",
       "name": "Chainlink",
       "color": "#4680b0",
@@ -1244,6 +1270,7 @@
   },
   {
       "uuid": "_H5FVG9iW",
+      "filter":"Swaps",
       "symbol": "UNI",
       "name": "Uniswap",
       "color": "#ff007a",
@@ -1290,6 +1317,7 @@
   },
   {
       "uuid": "ZlZpzOJo43mIo",
+      "filter":"Swaps",
       "symbol": "BCH",
       "name": "Bitcoin Cash",
       "color": "#8dc451",
@@ -1336,6 +1364,7 @@
   },
   {
       "uuid": "qUhEFk1I61atv",
+      "filter":"Removes",
       "symbol": "TRX",
       "name": "TRON",
       "color": "#eb0029",
@@ -1382,6 +1411,7 @@
   },
   {
       "uuid": "NfeOYfNcl",
+      "filter":"Removes",
       "symbol": "FTT",
       "name": "FTX Token",
       "color": "#77d9ed",
@@ -1428,6 +1458,7 @@
   },
   {
       "uuid": "TpHE2IShQw-sJ",
+      "filter":"Removes",
       "symbol": "ALGO",
       "name": "Algorand",
       "color": null,
@@ -1474,6 +1505,7 @@
   },
   {
       "uuid": "hnfQfsYfeIGUQ",
+      "filter":"Removes",
       "symbol": "ETC",
       "name": "Ethereum Classic",
       "color": "#699070",
@@ -1520,6 +1552,7 @@
   },
   {
       "uuid": "mqtUpyBxu8O8",
+      "filter":"Removes",
       "symbol": "LEO",
       "name": "LEO",
       "color": "#063f35",
@@ -1566,6 +1599,7 @@
   },
   {
       "uuid": "tEf7-dnwV3BXS",
+      "filter":"Add",
       "symbol": "MANA",
       "name": "Decentraland",
       "color": "#f47e33",
@@ -1612,6 +1646,7 @@
   },
   {
       "uuid": "J8xX4Fc9PxEat",
+      "filter":"Removes",
       "symbol": "WAVES",
       "name": "Waves",
       "color": "#0056FF",
@@ -1658,6 +1693,7 @@
   },
   {
       "uuid": "PDKcptVnzJTmN",
+      "filter":"Removes",
       "symbol": "OKB",
       "name": "OKB",
       "color": "#2d60e0",
@@ -1704,6 +1740,7 @@
   },
   {
       "uuid": "FEbS54wxo4oIl",
+      "filter":"Add",
       "symbol": "VET",
       "name": "VeChain",
       "color": "#4bc0fa",
@@ -1750,6 +1787,7 @@
   },
   {
       "uuid": "08CsQa-Ov",
+      "filter":"Removes",
       "symbol": "WEMIX",
       "name": "WEMIX TOKEN",
       "color": "#9bdc70",
@@ -1796,6 +1834,7 @@
   },
   {
       "uuid": "aMNLwaUbY",
+      "filter":"Removes",
       "symbol": "ICP",
       "name": "Internet Computer (DFINITY)",
       "color": "#00042b",
@@ -1842,6 +1881,7 @@
   },
   {
       "uuid": "jad286TjB",
+      "filter":"Removes",
       "symbol": "HBAR",
       "name": "Hedera HashGraph",
       "color": "#000000",
@@ -1888,6 +1928,7 @@
   },
   {
       "uuid": "f3iaFeCKEmkaZ",
+      "filter":"Removes",
       "symbol": "XLM",
       "name": "Stellar",
       "color": "#000000",
@@ -1934,6 +1975,7 @@
   },
   {
       "uuid": "ZO4D7EBy3",
+      "filter":"Removes",
       "symbol": "SENSO",
       "name": "SENSO",
       "color": "#000000",
@@ -1980,6 +2022,7 @@
   },
   {
       "uuid": "9_jH48RBW",
+      "filter":"Removes",
       "symbol": "BTCB",
       "name": "Bitcoin BEP2",
       "color": "#ff9d14",
@@ -2026,6 +2069,7 @@
   },
   {
       "uuid": "omwkOTglq",
+      "filter":"Removes",
       "symbol": "EGLD",
       "name": "Elrond",
       "color": "#000000",
@@ -2072,6 +2116,7 @@
   },
   {
       "uuid": "pxtKbG5rg",
+      "filter":"Removes",
       "symbol": "SAND",
       "name": "The Sandbox",
       "color": "#00adef",
@@ -2118,6 +2163,7 @@
   },
   {
       "uuid": "3mVx2FX_iJFp5",
+      "filter":"Removes",
       "symbol": "XMR",
       "name": "Monero",
       "color": "#ff7519",
@@ -2164,6 +2210,7 @@
   },
   {
       "uuid": "gpRKmM16k",
+      "filter":"Removes",
       "symbol": "AXS",
       "name": "Axie Infinity",
       "color": "#f5a616",
@@ -2210,6 +2257,7 @@
   },
   {
       "uuid": "B42IRxNtoYmwK",
+      "filter":"Removes",
       "symbol": "THETA",
       "name": "Theta Token",
       "color": "#1b1f2a",
@@ -2256,6 +2304,7 @@
   },
   {
       "uuid": "p_GHkOeDNKw0",
+      "filter":"Removes",
       "symbol": "CETH",
       "name": "Compound Ether",
       "color": null,
@@ -2302,3 +2351,23 @@
   }
 ]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

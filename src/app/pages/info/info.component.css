@@ -1,3 +1,7 @@
+.my-pagination /deep/ .ngx-pagination .current {
+  background:rgb(31, 199, 212);
+}
+
 .container-principale{
   margin-top: 57px;
   display: grid;
@@ -101,6 +105,7 @@ background: rgb(247, 246, 246);
   margin-left: auto;
   padding-left: 24px;
   padding-right: 24px;
+  padding-bottom: 24px;
 }
 .components-space {
   margin: 40px 40px 40px 0px;

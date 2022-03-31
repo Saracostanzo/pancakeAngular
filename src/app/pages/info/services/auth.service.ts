@@ -15,13 +15,14 @@ export class AuthService {
   constructor(private logService: LogService ,private http: HttpClient) { }
 
 
-  getAllToken() {
+   getAllToken() {
      return this.http.get<Tokens[]>(`http://localhost:3000/tokens`).pipe(
         retry(3),
-        tap(() => this.logService.log('HttpClient GetAll')),
+        tap(() => this.logService.log('HttpClient GetAll Token')),
         catchError(this.handleError)
       );
     }
+
 
  private handleError(error: HttpErrorResponse) {
   if (error.error instanceof ErrorEvent) {

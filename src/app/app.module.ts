@@ -42,7 +42,7 @@ import { VotingContainerComponent } from './pages/voting/voting-container/voting
               VotingContainerComponent,
 
             ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, InfoModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule,InfoModule],
   providers:  [AuthService],
   bootstrap: [AppComponent],
 })

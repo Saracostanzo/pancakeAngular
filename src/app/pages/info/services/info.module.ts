@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import {NgxPaginationModule} from 'ngx-pagination';
 import { InfoComponent } from '../info.component';
 import { GraficoComponent } from '../grafico/grafico.component';
 
@@ -20,8 +20,10 @@ import { InfoAllTokensComponent } from '../info-all-tokens/info.all-tokens.compo
     InfoAllTokensComponent
   ],
   imports: [
+    NgxPaginationModule,
     CommonModule,
     InfoRoutingModule,
+
   ],
   exports: []
 })
