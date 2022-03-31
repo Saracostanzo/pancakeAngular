@@ -18,32 +18,35 @@ import { TabCakeComponent } from './pages/home/tab-cake/tab-cake.component';
 import { TabSwitchComponent } from './pages/home/tab-switch/tab-switch.component';
 import { AuthService } from './pages/info/services/auth.service';
 import { InfoModule } from './pages/info/services/info.module';
+import { VotingModule } from './pages/voting/services/voting.module';
+import { VotingService } from './pages/voting/services/voting.service.module';
 import { VotingContainerComponent } from './pages/voting/voting-container/voting-container.component';
-
-
-
 
 @NgModule({
   declarations: [
     AppComponent,
-     FooterComponent,
-      DarkmodeComponent,
-       EarnComponent,
-        NavbarComponent,
-         EarnHeaderComponent,
-          EarnContentComponent,
-          EanrListComponent,
-          EanrCardComponent,
-          AccordeonDirective,
-           EarnFilterComponent,
-            HomeComponent,
-             TabSwitchComponent,
-              TabCakeComponent,
-              VotingContainerComponent,
-
-            ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule,InfoModule],
-  providers:  [AuthService],
+    FooterComponent,
+    DarkmodeComponent,
+    EarnComponent,
+    NavbarComponent,
+    EarnHeaderComponent,
+    EarnContentComponent,
+    EanrListComponent,
+    EanrCardComponent,
+    AccordeonDirective,
+    EarnFilterComponent,
+    HomeComponent,
+    TabSwitchComponent,
+    TabCakeComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    InfoModule,
+    VotingModule,
+  ],
+  providers: [AuthService, VotingService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

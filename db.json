@@ -2349,6 +2349,116 @@
       "24hVolume": 10480121,
       "btcPrice": 0
   }
+],
+"voting":[
+  {
+    "title":"Proposal for Adjustments to Farm Rewards",
+    "data":"Ends Apr 1st, 2022 12:00",
+    "buttonVote":"Vote Now",
+    "voteIcon":"../../../../assets/img voting/icon-button2-voting.svg",
+    "buttonCommunity":"Community",
+    "iconCommunity":"../../../../assets/img/users-fuxia.svg",
+    "freccia":"../../../../assets/img/freccia-dx-viola.svg"
+  },
+  {
+    "title":"Old Prediction Graph",
+    "data":"Ends Mar 31st, 2022 13:00",
+    "buttonVote":"Vote Now",
+    "voteIcon":"../../../../assets/img voting/icon-button2-voting.svg",
+    "buttonCommunity":"Community",
+    "iconCommunity":"../../../../assets/img/users-fuxia.svg",
+    "freccia":"../../../../assets/img/freccia-dx-viola.svg"
+  },
+  {
+    "title":"Provide more details for all tokens in farming",
+    "data":"Ends Mar 31st, 2022 15:45",
+    "buttonVote":"Vote Now",
+    "voteIcon":"../../../../assets/img voting/icon-button2-voting.svg",
+    "buttonCommunity":"Community",
+    "iconCommunity":"../../../../assets/img/users-fuxia.svg",
+    "freccia":"../../../../assets/img/freccia-dx-viola.svg"
+  },
+  {
+    "title":"Request The transparent and clear for all faming token",
+    "data":"Ends Mar 31st, 2022 16:45",
+    "buttonVote":"Vote Now",
+    "voteIcon":"../../../../assets/img voting/icon-button2-voting.svg",
+    "buttonCommunity":"Community",
+    "iconCommunity":"../../../../assets/img/users-fuxia.svg",
+    "freccia":"../../../../assets/img/freccia-dx-viola.svg"
+  },
+  {
+    "title":"Pairing with cake",
+    "data":"Ends Mar 31st, 2022 22:15",
+    "buttonVote":"Vote Now",
+    "voteIcon":"../../../../assets/img voting/icon-button2-voting.svg",
+    "buttonCommunity":"Community",
+    "iconCommunity":"../../../../assets/img/users-fuxia.svg",
+    "freccia":"../../../../assets/img/freccia-dx-viola.svg"
+  },
+  {
+    "title":"Proposal for Adjustments to Farm Rewards",
+    "data":"Ends Apr 1st, 2022 12:00",
+    "buttonVote":"Vote Now",
+    "voteIcon":"../../../../assets/img voting/icon-button2-voting.svg",
+    "buttonCommunity":"Community",
+    "iconCommunity":"../../../../assets/img/users-fuxia.svg",
+    "freccia":"../../../../assets/img/freccia-dx-viola.svg"
+  },
+  {
+    "title":"Add functionality for cross functional bridge",
+    "data":"Ends Apr 1st, 2022 21:00",
+    "buttonVote":"Vote Now",
+    "voteIcon":"../../../../assets/img voting/icon-button2-voting.svg",
+    "buttonCommunity":"Community",
+    "iconCommunity":"../../../../assets/img/users-fuxia.svg",
+    "freccia":"../../../../assets/img/freccia-dx-viola.svg"
+  },
+  {
+    "title":"Pancake to Add Trading Price Limits For Both Purchase and Sale Orders",
+    "data":"Ends Apr 1st, 2022 23:30",
+    "buttonVote":"Vote Now",
+    "voteIcon":"../../../../assets/img voting/icon-button2-voting.svg",
+    "buttonCommunity":"Community",
+    "iconCommunity":"../../../../assets/img/users-fuxia.svg",
+    "freccia":"../../../../assets/img/freccia-dx-viola.svg"
+  },
+  {
+    "title":"Stop Minting more $CAKE ",
+    "data":"Ends Apr 6th, 2022 09:15",
+    "buttonVote":"Vote Now",
+    "voteIcon":"../../../../assets/img voting/icon-button2-voting.svg",
+    "buttonCommunity":"Community",
+    "iconCommunity":"../../../../assets/img/users-fuxia.svg",
+    "freccia":"../../../../assets/img/freccia-dx-viola.svg"
+  },
+  {
+    "title":"Adding Features of Sending Message to Seller or Suggesting a Price Offer for NFTs on the Pancakeswap",
+    "data":"Ends Apr 13th, 2022 23:00",
+    "buttonVote":"Vote Now",
+    "voteIcon":"../../../../assets/img voting/icon-button2-voting.svg",
+    "buttonCommunity":"Community",
+    "iconCommunity":"../../../../assets/img/users-fuxia.svg",
+    "freccia":"../../../../assets/img/freccia-dx-viola.svg"
+  },
+  {
+    "title":"Run as a parachain in polkadot ",
+    "data":"Ends Apr 18th, 2022 06:00",
+    "buttonVote":"Vote Now",
+    "voteIcon":"../../../../assets/img voting/icon-button2-voting.svg",
+    "buttonCommunity":"Community",
+    "iconCommunity":"../../../../assets/img/users-fuxia.svg",
+    "freccia":"../../../../assets/img/freccia-dx-viola.svg"
+  },
+  {
+    "title":"PancakeInMetaverse",
+    "data":"Ends Apr 25th, 2022 20:15",
+    "buttonVote":"Vote Now",
+    "voteIcon":"../../../../assets/img voting/icon-button2-voting.svg",
+    "buttonCommunity":"Community",
+    "iconCommunity":"../../../../assets/img/users-fuxia.svg",
+    "freccia":"../../../../assets/img/freccia-dx-viola.svg"
+  }
 ]
 }
 

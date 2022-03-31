@@ -1,5 +1,5 @@
 
-  <main class="home">
+  <main class="home"*ngIf="(voting$ | async) as iters;">
     <div class="home-container-principale">
       <div class="color">
       <div class="home-section home-section2">
@@ -39,9 +39,9 @@
       <div class="info-components-tokens-container">
         <div class="color1">
         <div class="tab-version-box info-tab-version-box">
-          <a href="#"routerLink="/info"><button class="tab-button-v2-active"><img src="../../../../assets/img voting/icon-voting.svg" class="icon1">Core</button></a>
-          <a href="#"routerLink="/allPools"> <button class="tab-button-v1"><img src="../../../../assets/img/users.svg" class="icon1">Community</button></a>
-          <a href="#"routerLink="/allTokens"> <button class="tab-button-v1">All</button></a>
+          <a href="#"routerLink="/core"><button class="tab-button-v1"><img src="../../../../assets/img voting/icon-voting.svg" class="icon1">Core</button></a>
+          <a href="#"routerLink="/community"> <button class="tab-button-v1"><img src="../../../../assets/img/users.svg" class="icon1">Community</button></a>
+          <a href="#"routerLink="/voting"> <button class="tab-button-v2-active">All</button></a>
         </div>
       </div>
         <div class="components-tokens-border"></div>
@@ -65,33 +65,33 @@
             </div>
         <div class="components-tokens-border"></div>
         </div>
-        <a href="" class="hover">
+        <a href="" class="hover"*ngFor="let iter of iters">
         <div class="componnents-tokens-foot-lay">
           <div class="home-section home-section2 b">
             <div class="home-subcontainer-section home-subcontainer-section2 b1">
               <div class="home-container-text-section home-container-text-section2">
                 <p class="home-subtitle home-subtitle-section2">
-                  Proposal for a GamiFi.gg ($GMI) Syrup Pool and Farm
+                  {{iter.title}}
                 </p>
                 <h4 class="home-subtitle home-subtitle-section2 c">
-                  Ends Mar 30th, 2022 11:00
+                 {{iter.data}}
                 </h4>
 
                 <div class="home-container-buttons-section button-container1">
                   <a href="#" class="home-page-ifo">
-                    <button class="buttonew"><img src="../../../../assets/img voting/icon-button2-voting.svg" class="icon1">
-                      Vote Now
+                    <button class="buttonew"><img src={{iter.voteIcon}} class="icon1">
+                      {{iter.buttonVote}}
                     </button>
                   </a>
                   <a href="#" class="home-page-ifo">
-                    <button class="buttonew1"><img src="../../../../assets/img voting/icon-button3-voting.svg" class="icon1">
-                      More
+                    <button class="buttonew1"><img src={{iter.iconCommunity}} class="icon1">
+                      {{iter.buttonCommunity}}
                     </button>
                   </a>
                 </div>
               </div>
               <div class="home-container-img home-container-images-section2 b2">
-                <img src="../../../../assets/img/freccia-dx-viola.svg">
+                <img src={{iter.freccia}}>
               </div>
             </div>
           </div>

@@ -4,16 +4,15 @@ import { Voting } from '../services/interface-voting';
 import { VotingService } from '../services/voting.service.module';
 
 @Component({
-  selector: 'pancake-voting-container',
-  templateUrl: './voting-container.component.html',
-  styleUrls: ['./voting-container.component.css']
+  selector: 'pancake-voting-community',
+  templateUrl: './voting-community.component.html',
+  styleUrls: ['./voting-community.component.css']
 })
-export class VotingContainerComponent implements OnInit {
+export class VotingCommunityComponent implements OnInit {
   voting$!: Observable<Voting[]>;
   constructor(private service: VotingService) { }
 
   ngOnInit(): void {
     this.voting$ = this.service.getAllVoting();
   }
-
 }
