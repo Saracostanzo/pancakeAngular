@@ -7,15 +7,16 @@ import { DarkmodeComponent } from './layout/elements/darkmode/darkmode.component
 import { EarnComponent } from './pages/earn/earn.component';
 import { CompetitionComponent } from './pages/competition/competition.component';
 import { CompetitionHeaderComponent } from './pages/competition/competition-header/competition-header.component';
-import { YourScoreComponent } from './pages/competition/your-score/your-score.component';
-import { TeamReanksComponent } from './pages/competition/team-reanks/team-reanks.component';
-import { PrizesComponent } from './pages/competition/prizes/prizes.component';
-import { RulesComponent } from './pages/competition/rules/rules.component';
+import { YourScoreComponent } from './pages/competition/competition-content/your-score/your-score.component';
+import { TeamReanksComponent } from './pages/competition/competition-content/team-reanks/team-reanks.component';
+import { PrizesComponent } from './pages/competition/competition-content/prizes/prizes.component';
+import { RulesComponent } from './pages/competition/competition-content/rules/rules.component';
 import { CompetitionFooterComponent } from './pages/competition/competition-footer/competition-footer.component';
+import { CompetitionContentComponent } from './pages/competition/competition-content/competition-content.component';
 
 
 @NgModule({
-  declarations: [AppComponent, FooterComponent, DarkmodeComponent, EarnComponent, CompetitionComponent, CompetitionHeaderComponent, YourScoreComponent, TeamReanksComponent, PrizesComponent, RulesComponent, CompetitionFooterComponent,],
+  declarations: [AppComponent, FooterComponent, DarkmodeComponent, EarnComponent, CompetitionComponent, CompetitionHeaderComponent, YourScoreComponent, TeamReanksComponent, PrizesComponent, RulesComponent, CompetitionFooterComponent, CompetitionContentComponent,],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],

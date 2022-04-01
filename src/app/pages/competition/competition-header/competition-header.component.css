@@ -1,3 +1,7 @@
+.comp-hd-mrg-top {
+  margin-top: -114px;
+}
+
 .comp-bg {
   background: radial-gradient(329.58% 50% at 50% 50%, rgb(59, 40, 100) 0%, rgb(25, 19, 38) 100%);
   padding: 48px 0px;
@@ -6,7 +10,6 @@
   -webkit-box-align: center;
   align-items: center;
   z-index: 0;
-  /* margin-top: -114px; */
 }
 
 .comp-flex {
@@ -148,4 +151,10 @@
   font-size: 12px;
   color: rgb(122, 110, 170);
   line-height: 1.5;
+}
+
+@media screen and (min-width: 576px) {
+  .comp-hd-mrg-top {
+    margin-top: -94px;
+  }
 }
