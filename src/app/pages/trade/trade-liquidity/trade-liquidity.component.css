@@ -1,0 +1,365 @@
+.container-principale{
+  margin-top: 57px;
+  display: grid;
+
+}
+.color{
+  display: grid;
+  padding: 32px;
+  padding-bottom: 0px;
+  background:var(--bg-color--grad-block);
+}
+.tab-version-box {
+  background-color: rgb(238, 234, 244);
+  border-radius: 16px;
+  display: inline-flex;
+  border: 1px solid rgb(215, 202, 236);
+  width: auto;
+}
+.tab-button-v2-active {
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Kanit, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 40px;
+  padding: 0px 16px;
+  background-color: rgb(122, 110, 170);
+  color: rgb(255, 255, 255);
+}
+.tab-button-v1 {
+-webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Kanit, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 40px;
+  padding: 0px 16px;
+  background-color: transparent;
+  color: rgb(122, 110, 170);
+}
+*{
+  font-family: Kanit, sans-serif;
+}
+.tab-wrap-page-exchange-liquidity {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: rgb(133 133 133 / 10%) 0px -2px 0px -8px inset;
+  display: flex;
+}
+@media screen and (min-width: 576px) {
+  .tab-wrap-page-exchange-liquidity {
+   -webkit-box-pack: center;
+  justify-content : center;
+  padding-left: 0px;
+}
+}
+.tab-page-active {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  color: rgb(118, 69, 217);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 4px 4px 0px;
+  height: 42px;
+  text-decoration: underline 3px rgb(31, 199, 212);
+  cursor: pointer;
+  margin: 7px;
+}
+.tab-page {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  color: rgb(122, 110, 170);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px 4px 0px;
+  height: 42px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 7px;
+}
+.azzurro{
+  margin-left: 50px;
+  color: rgb(31, 199, 212);
+  text-decoration: underline;
+}
+.container-footer{
+  padding: 24px;
+  padding-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.nuvola{
+  -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(122, 110, 170);
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+}
+.footer-sx{
+display: inline-flex;
+align-items: center;
+}
+.footer-dx{
+  display: inline-flex;
+}
+
+.coniglio{
+  max-height: 108px;
+    max-width: 160px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+.components-liquidity-container {
+  max-width: 436px;
+  width: 100%;
+  z-index: 1;
+  background: rgb(231, 227, 235);
+  border-radius: 24px;
+  color: rgb(40, 13, 95);
+  overflow: hidden;
+ justify-self: center;
+ margin-bottom: 150px;
+  padding: 1px 1px 3px;
+  /* Modifica Design System da togliere */
+  width: 436px;
+}
+
+.components-liquidity-sty {
+  width: 100%;
+  height: 100%;
+  overflow: inherit;
+  background: rgb(255, 255, 255);
+  border-radius: 24px;
+}
+
+.components-liquidity-head-sty {
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 24px;
+  width: 100%;
+  border-bottom: 1px solid rgb(231, 227, 235);
+  display: flex;
+}
+
+.components-liquidity-head-lay {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.components-liquidity-head-text-lay {
+  display: flex;
+  flex-direction: column;
+}
+
+.components-liquidity-head-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: rgb(40, 13, 95);
+  margin-bottom: 8px;
+}
+
+.components-liquidity-remove-lay {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.components-liquidity-remove-sty {
+  color: rgb(122, 110, 170);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.components-liquidity-btns-lay {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.components-liquidity-btn-l-pos {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.components-liquidity-btn-l-lay {
+  display: flex;
+}
+
+.components-liquidity-btn-l-sty {
+  padding: 0px;
+  width: 32px;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 32px;
+  background-color: transparent;
+  color: rgb(31, 199, 212);
+  box-shadow: none;
+  margin-right: 8px;
+}
+
+.components-liquidity-svg-sty {
+  align-self: center;
+  fill: rgb(122, 110, 170);
+  flex-shrink: 0;
+  height: 24;
+  width: 24;
+}
+
+.components-liquidity-failure {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  background-color: rgb(237, 75, 158);
+}
+
+.components-liquidity-btn-r-sty {
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 48px;
+  background-color: transparent;
+  color: rgb(31, 199, 212);
+  box-shadow: none;
+  padding: 0px;
+  margin-left: 16px;
+}
+
+.components-liqudity-main-lay {
+  background-color: rgb(238, 238, 238);
+  padding: 24px;
+}
+
+.components-liqudity-main-text-sty {
+  color: rgb(122, 110, 170);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.components-liqudity-foot-lay {
+  text-align: center;
+  border-top: 1px solid rgb(231, 227, 235);
+  padding: 24px;
+}
+
+.components-liqudity-foot-a {
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 48px;
+  padding: 0px 24px;
+  background-color: rgb(31, 199, 212);
+  color: white;
+  width: 100%;
+  text-decoration: none;
+}
+
+.components-liqudity-foot-svg {
+  align-self: center;
+  fill: white;
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+  width: 20px;
+}

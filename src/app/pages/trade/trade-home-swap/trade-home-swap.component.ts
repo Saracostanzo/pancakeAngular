@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart, registerables } from 'chart.js';
-import { AuthService } from '../pages/info/services/auth.service';
+import { TradeService } from '../services/trade.service.module';
 
 @Component({
   selector: 'pancake-trade-home-swap',
@@ -17,7 +17,7 @@ export class TradeHomeSwapComponent implements OnInit {
   chart:any=[]
   chart1:any=[]
 
-  constructor(private service: AuthService) {
+  constructor(private service: TradeService) {
       Chart.register(...registerables)
      }
 
