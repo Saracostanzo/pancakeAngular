@@ -32,6 +32,10 @@ import { CompetitionComponent } from './pages/competition/competition.component'
 import { CompetitionContentComponent } from './pages/competition/competition-content/competition-content.component';
 import { CompetitionFooterComponent } from './pages/competition/competition-footer/competition-footer.component';
 import { CompetitionHeaderComponent } from './pages/competition/competition-header/competition-header.component';
+import { PrizesComponent } from './pages/competition/competition-content/prizes/prizes.component';
+import { RulesComponent } from './pages/competition/competition-content/rules/rules.component';
+import { YourScoreComponent } from './pages/competition/competition-content/your-score/your-score.component';
+import { TeamReanksComponent } from './pages/competition/competition-content/team-reanks/team-reanks.component';
 
 
 @NgModule({
@@ -60,7 +64,11 @@ import { CompetitionHeaderComponent } from './pages/competition/competition-head
     CompetitionComponent,
     CompetitionContentComponent,
     CompetitionFooterComponent,
-    CompetitionHeaderComponent
+    CompetitionHeaderComponent,
+    PrizesComponent,
+    RulesComponent,
+    YourScoreComponent,
+    TeamReanksComponent
   ],
   imports: [
     BrowserModule,

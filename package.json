@@ -18,16 +18,12 @@
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
-<<<<<<< HEAD
     "angular-highcharts": "^13.0.1",
     "bootstrap": "^5.1.3",
     "chart.js": "^3.7.1",
     "highcharts": "^9.3.3",
     "highcharts-angular": "^3.0.0",
     "ngx-pagination": "^5.1.1",
-=======
-    "bootstrap": "^5.1.3",
->>>>>>> origin/competition
     "rxjs": "~7.5.0",
     "rxjs-compat": "^6.6.7",
     "tslib": "^2.3.0",
