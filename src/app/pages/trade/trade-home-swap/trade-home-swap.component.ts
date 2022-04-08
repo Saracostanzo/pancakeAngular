@@ -22,8 +22,6 @@ export class TradeHomeSwapComponent implements OnInit {
      }
 
     ngOnInit(): void {
-
-
       this.service.getAllToken().subscribe((res)=>{
         this.v=res[3].sparkline[0];
         this.l=res[4].change
