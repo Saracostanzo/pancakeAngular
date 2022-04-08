@@ -1,0 +1,226 @@
+.nft-ttl-flx-n {
+   display: flex;
+   -webkit-box-pack: justify;
+   justify-content: space-between;
+   -webkit-box-align: center;
+   align-items: center;
+}
+
+.nft-new-coll-mrg {
+  margin-bottom: 26px;
+}
+
+.nft-new-coll-fnt-sz {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.nft-title-col {
+  color: rgb(40, 13, 95);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+
+.nft-view-all-btn {
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  height: 32px;
+  padding: 0px 16px;
+  background-color: transparent;
+  border: 2px solid rgb(31, 199, 212);
+  box-shadow: none;
+  color: rgb(31, 199, 212);
+}
+
+.nft-view-all-btn:hover {
+  opacity: 0.65;
+  transition: 0.2s ease 0s;
+}
+
+.nft-view-all-btn:active {
+  opacity: 0.85;
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.nft-arrow-svg {
+  align-self: center;
+  fill: rgb(31, 199, 212);
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+
+.nft-new-coll-d-grd-tmp-col {
+  display: grid;
+  gap: 24px 16px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.nft-new-coll-card-brdr {
+    border-radius: 8px;
+    max-width: 320px;
+}
+
+.nft-new-coll-card-brdr:hover {
+  opacity: .6;
+  transition: 200ms ease 0s;
+}
+
+.nft-new-coll-card-sty {
+    background: rgb(231, 227, 235);
+    border-radius: 24px;
+    color: rgb(40, 13, 95);
+    overflow: hidden;
+    position: relative;
+    padding: 1px 1px 3px;
+}
+
+.nft-new-coll-card-sty > div {
+    border-radius: 8px;
+}
+
+.nft-new-coll-card-bg {
+  width: 100%;
+  height: 100%;
+  overflow: inherit;
+  background: rgb(255, 255, 255);
+  border-radius: 24px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nft-card-pad {
+  padding: 8px;
+}
+
+.nft-new-coll-crd-brdr {
+  height: max-content;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.nft-new-crd-bg {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.nft-new-crd-mx-pos {
+  max-height: 320px;
+  max-width: 320px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.nft-new-crd-mx-pos::after {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.nft-txt-view-all-flx {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.nft-new-coll-sub-text-col {
+    color: rgb(122, 110, 170);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.nft-nw-col-ttl-col {
+    color: rgb(40, 13, 95);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.nft-nw-crd-brdr-top {
+  border-top: 1px solid rgb(231, 227, 235);
+  padding-top: 8px;
+}
+
+.nft-nw-crd-flx-foot {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.nft-nw-crd-price {
+  color: rgb(122, 110, 170);
+  font-weight: 400;
+  line-height: 1.5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  max-width: 120px;
+}
+
+.nft-card-val-flx {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.nft-car-text-col {
+  color: rgb(122, 110, 170);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+.nft-vol-token-svg {
+  align-self: center;
+  fill: rgb(40, 13, 95);
+  flex-shrink: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+@media screen and (min-width: 968px) {
+    .nft-new-coll-fnt-sz {
+      font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 851px) {
+    .nft-new-coll-d-grd-tmp-col {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 369px) {
+    .nft-new-coll-d-grd-tmp-col {
+      grid-template-columns: 1fr;
+    }
+}
+

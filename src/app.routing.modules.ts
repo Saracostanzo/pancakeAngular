@@ -1,7 +1,9 @@
 import { NgModule } from "@angular/core";
 import{Routes , RouterModule}from "@angular/router";
+import { CompetitionComponent } from "./app/pages/competition/competition.component";
 import { EarnComponent } from "./app/pages/earn/earn.component";
 import { HomeComponent } from "./app/pages/home/home.component";
+import { NftComponent } from "./app/pages/nft/nft.component";
 
 
 const routers: Routes=[
@@ -19,6 +21,8 @@ const routers: Routes=[
     path: 'trade',
     loadChildren: () => import('./app/pages/trade/services/trade.module').then(m => m.TradeModule),
   },
+  {path:"competition",component:CompetitionComponent},
+  {path:"nft", component:NftComponent},
   {path:"", redirectTo:"/home", pathMatch:"full"}
 
 ];

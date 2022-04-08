@@ -21,6 +21,18 @@ import { InfoModule } from './pages/info/services/info.module';
 import { VotingModule } from './pages/voting/services/voting.module';
 import { VotingService } from './pages/voting/services/voting.service.module';
 import { TradeService } from './pages/trade/services/trade.service.module';
+import { NftComponent } from './pages/nft/nft.component';
+import { NftHeaderComponent } from './pages/nft/nft-header/nft-header.component';
+import { NftContentComponent } from './pages/nft/nft-content/nft-content.component';
+import { NewestCollectionsComponent } from './pages/nft/nft-content/newest-collections/newest-collections.component';
+import { HotCollectionsComponent } from './pages/nft/nft-content/hot-collections/hot-collections.component';
+import { NewestArrivalsComponent } from './pages/nft/nft-content/newest-arrivals/newest-arrivals.component';
+import { FaqsComponent } from './pages/nft/nft-content/faqs/faqs.component';
+import { CompetitionComponent } from './pages/competition/competition.component';
+import { CompetitionContentComponent } from './pages/competition/competition-content/competition-content.component';
+import { CompetitionFooterComponent } from './pages/competition/competition-footer/competition-footer.component';
+import { CompetitionHeaderComponent } from './pages/competition/competition-header/competition-header.component';
+
 
 @NgModule({
   declarations: [
@@ -38,6 +50,17 @@ import { TradeService } from './pages/trade/services/trade.service.module';
     HomeComponent,
     TabSwitchComponent,
     TabCakeComponent,
+    NftComponent,
+    NftHeaderComponent,
+    NftContentComponent,
+    HotCollectionsComponent,
+    NewestArrivalsComponent,
+    NewestCollectionsComponent,
+    FaqsComponent,
+    CompetitionComponent,
+    CompetitionContentComponent,
+    CompetitionFooterComponent,
+    CompetitionHeaderComponent
   ],
   imports: [
     BrowserModule,
