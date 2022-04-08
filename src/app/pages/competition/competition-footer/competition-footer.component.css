@@ -93,8 +93,8 @@
    line-height: 110%;
    color: rgb(255, 255, 255);
    text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
-   background: linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%) text;
-   -webkit-text-stroke: 4px transparent;
+   background: -webkit-linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%);
+  -webkit-background-clip: text;
    white-space: normal;
  }
 

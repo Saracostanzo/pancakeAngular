@@ -1,10 +1,6 @@
-.comp-hd-mrg-top {
-  margin-top: -114px;
-}
-
 .comp-bg {
   background: radial-gradient(329.58% 50% at 50% 50%, rgb(59, 40, 100) 0%, rgb(25, 19, 38) 100%);
-  padding: 48px 0px;
+  padding: 110px 0px;
   position: relative;
   flex-direction: column;
   -webkit-box-align: center;
@@ -40,7 +36,8 @@
   font-weight: 600;
   color: rgb(255, 255, 255);
   text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
-  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%) text;
+  background: -webkit-linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%);
+  -webkit-background-clip: text;
   -webkit-text-stroke: 4px transparent;
 }
 
@@ -48,9 +45,10 @@
   font-size: 40px;
   line-height: 110%;
   font-weight: 600;
-  color: rgb(255, 255, 255);
-  /* -webkit-text-fill-color: transparent; */
-  color: linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%) text;
+  color: rgb(255, 216, 0);
+  background: -webkit-linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .comp-vol-sty {
@@ -110,7 +108,9 @@
   line-height: 110%;
   font-weight: 600;
   color: rgb(255, 255, 255);
-  background: linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%) text;
+  background: -webkit-linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .comp-line {
@@ -129,17 +129,6 @@
   justify-content: center;
 }
 
-.comp-card-tx-sty {
-  margin-right: 4px;
-  font-size: 24px;
-  white-space: nowrap;
-  text-align: center;
-  line-height: 110%;
-  font-weight: 600;
-  color: rgb(255, 255, 255);
-  background: linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%) text;
-}
-
 .comp-check-svg {
   fill: rgb(122, 110, 170);
   flex-shrink: 0;
@@ -154,7 +143,5 @@
 }
 
 @media screen and (min-width: 576px) {
-  .comp-hd-mrg-top {
-    margin-top: -94px;
-  }
+  
 }
