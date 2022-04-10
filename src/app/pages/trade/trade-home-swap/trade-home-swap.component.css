@@ -40,8 +40,20 @@
   cursor: pointer;
   margin: 7px;
 }
+.ottanta{
+  width: 80%;
 
+}
+.sessanta{
+  width: 60%;
+}
 
+.displayNone{
+display: none;
+}
+.pointer{
+  cursor: pointer;
+}
 .tab-page {
   position: relative;
   display: flex;
@@ -93,7 +105,7 @@
   gap: 1em;
 }
 .info-box-grafico1{
-  width: 60%;
+
   background: rgba(255, 255, 255, 0.5);
   border: solid 2px rgb(231, 227, 235);
   border-radius: 24px;

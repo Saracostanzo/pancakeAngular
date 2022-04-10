@@ -14,9 +14,22 @@ export class TradeHomeSwapComponent implements OnInit {
   volume24H:any;
   l:any=[];
   v:any=[];
+  e:any;
+  f:any;
   chart:any=[]
   chart1:any=[]
-
+  chart2:any=[]
+ridim:boolean=true;
+activeOre:boolean=true;
+activeWeek:boolean=false;
+activeMese:boolean=false;
+activeAnno:boolean=false;
+  grafico: boolean = true;
+  grafico2:boolean=false;
+  grafico1:boolean=true;
+  bnb:boolean=false;
+  scritta:boolean=true;
+  scritta1:boolean=true;
   constructor(private service: TradeService) {
       Chart.register(...registerables)
      }
@@ -49,7 +62,156 @@ export class TradeHomeSwapComponent implements OnInit {
             },
         }
         })
-      })
 
+        this.chart1= new Chart('canvas1',{
+          type:'line',
+          data:{
+            labels:this.volume24H,
+            datasets: [{
+              label: '',
+              data: this.coinPrice,
+              backgroundColor: 'rgba(49, 208, 170,0.5)',
+              borderColor:'rgb(49, 208, 170)',
+              fill:true,
+
+            borderWidth: 2
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: false
+            }
+        }
+    }
+  })
+  this.chart2= new Chart('canvas2',{
+    type:'line',
+    data:{
+      labels:this.coinPrice,
+      datasets: [{
+        label: '',
+        data: this.volume24H,
+        backgroundColor:'rgba(49, 208, 170,0.5)',
+        borderColor: 'rgb(49, 208, 170)',
+        fill: true,
+
+      borderWidth: 2
+      }]
+    },
+    options: {
+      scales: {
+          y: {
+              beginAtZero: false
+          }
+      },
+  }
+  })
+      })
+    }
+displayNone(){
+  if(this.grafico===true){
+    this.grafico=false;
+  }else{
+    this.grafico=true
+  }
+}
+    changeWidth(){
+      if(this.ridim===true){
+        this.ridim=false;
+      }else{
+        this.ridim=true
+      }
+    }
+
+    clickOra(){
+      if(this.activeOre===false){
+        this.grafico1=true;
+        this.grafico2=false;
+        this.activeOre=true
+        this.activeAnno=false
+        this.activeMese=false
+        this.activeWeek=false
+        this.scritta=true;
+        this.bnb=false;
+
+    }else{
+      this.activeAnno=false
+        this.activeMese=false
+        this.activeWeek=false
+    }
+    }
+    clickWeek(){
+      if(this.activeWeek===false){
+        this.grafico1=false;
+        this.grafico2=true;
+        this.activeWeek=true;
+        this.activeOre=false;
+        this.activeAnno=false;
+        this.activeMese=false;
+        this.scritta=true;
+        this.bnb=false;
+      }
+    }
+    clickMese(){
+      if(this.activeMese===false){
+        this.activeMese=true;
+        this.activeOre=false;
+        this.activeAnno=false;
+        this.activeWeek=false;
+        this.grafico1=true;
+        this.grafico2=false;
+        this.scritta=true;
+        this.scritta1=true;
+        this.bnb=false;
+      }
+    }
+    clickAnno(){
+      if(this.activeAnno===false){
+        this.grafico1=false;
+        this.grafico2=true;
+        this.activeAnno=true;
+        this.activeOre=false;
+        this.activeWeek=false;
+        this.activeMese=false;
+        this.scritta=true;
+        this.scritta1=true;
+        this.bnb=false;
+      }
+    }
+    bnbCake(){
+if(this.bnb===false && this.scritta===true){
+  this.bnb=true;
+  this.scritta=false;
+  this.grafico1=false;
+  this.grafico2=false;
+  this.scritta1=true;
+}else{
+  if(this.bnb===true && this.scritta===false){
+    this.bnb=false;
+    this.scritta=true;
+    this.grafico1=true;
+    this.grafico2=false;
+    this.scritta1=true;
+  }
+}
+}
+cakeBnb(){
+  if(this.bnb===false && this.scritta1===true){
+    this.bnb=true;
+    this.scritta1=false;
+    this.grafico1=false;
+    this.grafico2=false;
+  }else{
+    if(this.bnb===true && this.scritta1===false){
+      this.bnb=false;
+      this.scritta1=true;
+      this.grafico1=true;
+      this.grafico2=false;
     }
   }
+}
+    }
+
+
+
