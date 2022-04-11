@@ -1,0 +1,25 @@
+<div class="info-container-grafici" >
+  <h2 class="info-title-section-grafici">PancakeSwap Info & Analytics</h2>
+  <div class="info-box-grafici">
+    <div class="info-box-grafico1">
+      <div class="info-sub-box-grafico1">
+        <h5 class="info-title-grafico">Liquidity</h5>
+        <h1 class="info-number-grafico"> $ {{l}}</h1>
+        <h5 class="info-subtitle-grafico"> {{ value | date }}</h5>
+        <div class="info-box-grafico-img">
+          <canvas id="canvas">{{chart}}</canvas>
+        </div>
+      </div>
+    </div>
+    <div class="info-box-grafico1">
+      <div class="info-sub-box-grafico1">
+        <h5 class="info-title-grafico">Volume 24H</h5>
+        <h1 class="info-number-grafico"> $ {{v}}</h1>
+        <h5 class="info-subtitle-grafico"> {{ value | date }}</h5>
+        <div class="info-box-grafico-img">
+          <canvas id="canvas1">{{chart1}}</canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>

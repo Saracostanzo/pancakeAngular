@@ -127,6 +127,9 @@ padding: 0px 16px;
   border: transparent;
   background-color: white;
 }
+.dropdown-itemR:hover{
+  color: var(--subtle-color);
+}
 .logoMobile{
   width: 32px;
   height: 32px;
