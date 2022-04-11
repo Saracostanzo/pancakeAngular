@@ -54,6 +54,10 @@ display: none;
 .pointer{
   cursor: pointer;
 }
+.self{
+  margin-left: 400px;
+  justify-self: center;
+}
 .tab-page {
   position: relative;
   display: flex;
@@ -211,6 +215,11 @@ padding: 0px 1rem;
 .span2{
   margin: 5px;
   color: rgb(237, 75, 158);
+  font-size: 20px;
+}
+.verde{
+  margin: 5px;
+  color: rgb(49, 208, 170);
   font-size: 20px;
 }
 .destra{

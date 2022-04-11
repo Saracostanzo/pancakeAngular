@@ -36,6 +36,7 @@ activeAnno:boolean=false;
 
     ngOnInit(): void {
       this.service.getAllToken().subscribe((res)=>{
+       this.e=res.map(({marketCap})=>marketCap)
         this.v=res[3].sparkline[0];
         this.l=res[4].change
         this.coinPrice= res.map(({ price }) => price)
@@ -62,14 +63,14 @@ activeAnno:boolean=false;
             },
         }
         })
-
+console.log(this.e)
         this.chart1= new Chart('canvas1',{
           type:'line',
           data:{
-            labels:this.volume24H,
+            labels:this.e,
             datasets: [{
               label: '',
-              data: this.coinPrice,
+              data: this.volume24H + 5,
               backgroundColor: 'rgba(49, 208, 170,0.5)',
               borderColor:'rgb(49, 208, 170)',
               fill:true,
@@ -88,7 +89,7 @@ activeAnno:boolean=false;
   this.chart2= new Chart('canvas2',{
     type:'line',
     data:{
-      labels:this.coinPrice,
+      labels:[ '05','25','11','29','17','05','25','11','29','18','06','26','14','31','17','05','25'],
       datasets: [{
         label: '',
         data: this.volume24H,
@@ -180,14 +181,14 @@ displayNone(){
       }
     }
     bnbCake(){
-if(this.bnb===false && this.scritta===true){
+if(this.bnb===false && this.scritta===true||this.bnb===false && this.scritta1===true){
   this.bnb=true;
   this.scritta=false;
   this.grafico1=false;
   this.grafico2=false;
   this.scritta1=true;
 }else{
-  if(this.bnb===true && this.scritta===false){
+  if(this.bnb===true && this.scritta===false||this.bnb===true && this.scritta1===false){
     this.bnb=false;
     this.scritta=true;
     this.grafico1=true;
@@ -197,13 +198,13 @@ if(this.bnb===false && this.scritta===true){
 }
 }
 cakeBnb(){
-  if(this.bnb===false && this.scritta1===true){
+  if(this.bnb===false && this.scritta1===true||this.bnb===false && this.scritta===true){
     this.bnb=true;
     this.scritta1=false;
     this.grafico1=false;
     this.grafico2=false;
   }else{
-    if(this.bnb===true && this.scritta1===false){
+    if(this.bnb===true && this.scritta1===false||this.bnb===true && this.scritta===false){
       this.bnb=false;
       this.scritta1=true;
       this.grafico1=true;

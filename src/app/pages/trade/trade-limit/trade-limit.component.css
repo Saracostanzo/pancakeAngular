@@ -254,6 +254,20 @@ padding: 0px 1rem;
     margin-right: 8px;
 
 }
+.ottanta{
+  width: 80%;
+
+}
+.sessanta{
+  width: 60%;
+}
+
+.displayNone{
+display: none;
+}
+.pointer{
+  cursor: pointer;
+}
 .azzurro{
   margin-left: 50px;
   color: rgb(31, 199, 212);
@@ -337,7 +351,15 @@ justify-items: center;
   margin-top: 0px;
   margin-right: 0px;
 }
-
+.self{
+  margin-left: 400px;
+  justify-self: center;
+}
+.verde{
+  margin: 5px;
+  color: rgb(49, 208, 170);
+  font-size: 20px;
+}
 .components-swap-position {
   border-radius: 24px;
   max-width: 436px;
