@@ -3,7 +3,8 @@ import{Routes , RouterModule}from "@angular/router";
 import { CompetitionComponent } from "./app/pages/competition/competition.component";
 import { EarnComponent } from "./app/pages/earn/earn.component";
 import { HomeComponent } from "./app/pages/home/home.component";
-import { VotingContainerComponent } from "./app/pages/voting/voting-container/voting-container.component";
+import { NftComponent } from "./app/pages/nft/nft.component";
+
 
 const routers: Routes=[
   {path:"home", component: HomeComponent },
@@ -17,6 +18,12 @@ const routers: Routes=[
     path: 'voting',
     loadChildren: () => import('./app/pages/voting/services/voting.module').then(m => m.VotingModule),
   },
+  {
+    path: 'trade',
+    loadChildren: () => import('./app/pages/trade/services/trade.module').then(m => m.TradeModule),
+  },
+  {path:"competition",component:CompetitionComponent},
+  {path:"nft", component:NftComponent},
   {path:"", redirectTo:"/home", pathMatch:"full"}
 
 ];

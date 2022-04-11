@@ -22,15 +22,24 @@ import { AuthService } from './pages/info/services/auth.service';
 import { InfoModule } from './pages/info/services/info.module';
 import { VotingModule } from './pages/voting/services/voting.module';
 import { VotingService } from './pages/voting/services/voting.service.module';
-import { VotingContainerComponent } from './pages/voting/voting-container/voting-container.component';
+import { TradeService } from './pages/trade/services/trade.service.module';
+import { NftComponent } from './pages/nft/nft.component';
+import { NftHeaderComponent } from './pages/nft/nft-header/nft-header.component';
+import { NftContentComponent } from './pages/nft/nft-content/nft-content.component';
+import { NewestCollectionsComponent } from './pages/nft/nft-content/newest-collections/newest-collections.component';
+import { HotCollectionsComponent } from './pages/nft/nft-content/hot-collections/hot-collections.component';
+import { NewestArrivalsComponent } from './pages/nft/nft-content/newest-arrivals/newest-arrivals.component';
+import { FaqsComponent } from './pages/nft/nft-content/faqs/faqs.component';
 import { CompetitionComponent } from './pages/competition/competition.component';
+import { CompetitionContentComponent } from './pages/competition/competition-content/competition-content.component';
+import { CompetitionFooterComponent } from './pages/competition/competition-footer/competition-footer.component';
 import { CompetitionHeaderComponent } from './pages/competition/competition-header/competition-header.component';
-import { YourScoreComponent } from './pages/competition/competition-content/your-score/your-score.component';
-import { TeamReanksComponent } from './pages/competition/competition-content/team-reanks/team-reanks.component';
 import { PrizesComponent } from './pages/competition/competition-content/prizes/prizes.component';
 import { RulesComponent } from './pages/competition/competition-content/rules/rules.component';
-import { CompetitionFooterComponent } from './pages/competition/competition-footer/competition-footer.component';
-import { CompetitionContentComponent } from './pages/competition/competition-content/competition-content.component';
+import { YourScoreComponent } from './pages/competition/competition-content/your-score/your-score.component';
+import { TeamReanksComponent } from './pages/competition/competition-content/team-reanks/team-reanks.component';
+import { MakeComponent } from './pages/voting/make/make.component';
+
 
 
 @NgModule({
@@ -49,7 +58,23 @@ import { CompetitionContentComponent } from './pages/competition/competition-con
     HomeComponent,
     TabSwitchComponent,
     TabCakeComponent,
-    CompetitionComponent, CompetitionHeaderComponent, YourScoreComponent, TeamReanksComponent, PrizesComponent, RulesComponent, CompetitionFooterComponent, CompetitionContentComponent
+    NftComponent,
+    NftHeaderComponent,
+    NftContentComponent,
+    HotCollectionsComponent,
+    NewestArrivalsComponent,
+    NewestCollectionsComponent,
+    FaqsComponent,
+    CompetitionComponent,
+    CompetitionContentComponent,
+    CompetitionFooterComponent,
+    CompetitionHeaderComponent,
+    PrizesComponent,
+    RulesComponent,
+    YourScoreComponent,
+    TeamReanksComponent,
+    MakeComponent
+
   ],
   imports: [
     BrowserModule,
@@ -58,7 +83,8 @@ import { CompetitionContentComponent } from './pages/competition/competition-con
     InfoModule,
     VotingModule,
   ],
-  providers: [AuthService, VotingService],
+
+  providers: [AuthService, VotingService, TradeService],
 
   bootstrap: [AppComponent],
 })
