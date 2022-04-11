@@ -13,12 +13,14 @@ import { PrizesComponent } from './pages/competition/competition-content/prizes/
 import { RulesComponent } from './pages/competition/competition-content/rules/rules.component';
 import { CompetitionFooterComponent } from './pages/competition/competition-footer/competition-footer.component';
 import { CompetitionContentComponent } from './pages/competition/competition-content/competition-content.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
 
 
 @NgModule({
-  declarations: [AppComponent, FooterComponent, DarkmodeComponent, EarnComponent, CompetitionComponent, CompetitionHeaderComponent, YourScoreComponent, TeamReanksComponent, PrizesComponent, RulesComponent, CompetitionFooterComponent, CompetitionContentComponent,],
+  declarations: [AppComponent, FooterComponent, DarkmodeComponent, EarnComponent, CompetitionComponent, CompetitionHeaderComponent, YourScoreComponent, TeamReanksComponent, PrizesComponent, RulesComponent, CompetitionFooterComponent, CompetitionContentComponent, NavbarComponent],
+
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

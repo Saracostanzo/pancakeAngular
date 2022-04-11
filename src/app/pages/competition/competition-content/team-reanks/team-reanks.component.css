@@ -579,7 +579,7 @@
   z-index: 2;
   top: 50%;
   transform: translate(0px, -50%);
-  left: 0px;
+  left: -50px;
 }
 
 .comp-thi-ban-svg {
@@ -629,7 +629,7 @@
   z-index: 2;
   top: 50%;
   transform: translate(0px, -50%);
-  right: 0px;
+  right: -50px;
 }
 
 .comp-cl-right-tw-hw {
