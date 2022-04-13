@@ -68,15 +68,19 @@ tab:TabellaSwitch[]=[
   }
 
 ]
- buttonElFarm:any = document.getElementById("button-switch");
-farmEL:any = document.querySelectorAll(".home-container-section-text-tab-farms");
-poolEL:any = document.querySelectorAll(".home-container-section-text-tab-syrup-pools");
-spanFarm: any = document.getElementById("farms");
- spanPools: any = document.getElementById("pools");
+ tab1:boolean=true
 
   constructor() { }
 
   ngOnInit(): void {
+
+  }
+  clickTab(){
+    if(this.tab1===true){
+      this.tab1=false
+    }else
+    this.tab1=true
   }
 
 }
+

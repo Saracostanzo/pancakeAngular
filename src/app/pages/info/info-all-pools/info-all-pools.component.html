@@ -5,9 +5,11 @@
       <a href="#"routerLink="/allPools"> <button class="tab-button-v2-active">Pools</button></a>
       <a href="#"routerLink="/allTokens"> <button class="tab-button-v1">Tokens</button></a>
     </div>
-    <div class="info-input-search">
-      <input placeholder="Search pools or tokens" scale="md" class="input-search__input " value="">
-    </div>
+    <form #f="ngForm">
+      <div class="info-input-search">
+        <input placeholder="Search pools or tokens" name="filter" scale="md" class="input-search__input " value=""ngModel (input)="addNewValue(f)">
+      </div>
+      </form>
   </div>
   <div class="bls">
 <h2 class="info-title-tokens-list"> All Pools</h2>
@@ -23,7 +25,7 @@
     <div class="components-tokens-header-text">LIQUIDITY</div>
   </div>
   <div class="components-tokens-border"></div>
-  <div class="components-tokens-a"*ngFor="let iter1 of iters | paginate: { itemsPerPage: 10, currentPage: page, totalItems: totalLength }">
+  <div class="components-tokens-a"*ngFor="let iter1 of filter2 | paginate: { itemsPerPage: 10, currentPage: page, totalItems: totalLength }">
     <div class="info-components-tokens-a-content">
       <div class="components-tokens-number-lay">
         <div class="components-tokens-number-sty">{{iter1.rank}}</div>

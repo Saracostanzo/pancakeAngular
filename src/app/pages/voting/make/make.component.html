@@ -1,21 +1,24 @@
-<!-- <main class="home">
+
+<main class="home">
   <div class="home-container-principale">
     <div class="color">
+      <div class="home-container-buttons-section button-container1">
+        <a href="#" routerLink="/home" class=" colleg buttonHover">Home  <span class="gray"> > </span></a>  <a href="#" routerLink="/voting" class=" colleg buttonHover">Voting</a><span class="gray"> > </span><span class="viola"> Make a Proposal</span>
+      </div>
     <div class="home-section home-section2">
       <div class="home-subcontainer-section home-subcontainer-section2">
         <div class="home-container-text-section home-container-text-section2">
-          <h1 class="home-title home-title-section2">Voting</h1>
-          <h4 class="home-subtitle home-subtitle-section2">
-            Have your say in the future of the PancakeSwap Ecosystem
-          </h4>
 
-          <div class="home-container-buttons-section button-container1">
-            <a href="#" class="home-page-ifo">
-              <button class="buttonLarge buttonHover buttonActive"><img src="../../../../assets/img voting/icon-button-voting.svg" class="icon1">
-                Make a Proposal
-              </button>
-            </a>
+          <div class="div-title ">
+            <label for="name" class="label-title">Title</label>
+            <input id="name" name="name" scale="lg" required="" class="input-title altTitle" value="">
           </div>
+          <div class="div-title div2">
+            <label for="name" class="label-title">Content</label>
+            <h5 class="subT">Tip: write in Markdown!</h5>
+            <textarea id="name" name="name" scale="lg" required="" class="input-title altText" value=""></textarea>
+          </div>
+
         </div>
         <div class="components-swap-container">
           <div class="components-swap-position">
@@ -25,12 +28,7 @@
                   <button class="components-swap-btn-graph" scale="sm">
                   </button>
                   <div class="components-swap-header-text-lay">
-                    <h2 class="components-swap-header-title">Add Liquidity</h2>
-                    <div class="components-swap-header-text-lay">
-                      <div class="components-swap-header-text">
-                        Add liquidity to receive LP tokens
-                      </div>
-                    </div>
+                    <h2 class="components-swap-header-title">Actions</h2>
                   </div>
                   <div class="components-swap-header-btns-lay">
                     <span class="components-swap-header-btn-l-lay">
@@ -53,7 +51,7 @@
                       <button class="components-swap-btns-sty" scale="sm">
                         <div class="components-swap-bnb-cake-text-lay">
                           <div class="components-swap-bnb-cake-style">
-                            Select a currency
+                            START DATE
                           </div>
                         </div>
                       </button>
@@ -62,16 +60,11 @@
                       <div class="components-swap-inp-sty">
                         <div class="components-swap-inp-lay2">
                           <div class="components-swap-inp-lay3">
-                            <input class="components-swap-input-sty2" inputmode="decimal" title="Token Amount" autocomplete="off" autocorrect="off" type="text" pattern="^[0-9]*[.,]?[0-9]*$" placeholder="0.0" minlength="1" maxlength="79" spellcheck="false" value="">
+                            <input scale="md" name="startDate" placeholder="YYYY/MM/DD" class="components-swap-input-sty2" value="">
                           </div>
                         </div>
                         <div class="components-swap-inp-lay4"></div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="components-swap-btn-arrow-lay">
-                    <div class="components-swap-btn-arrow-space">
-                      <button class="components-swap-btn-arrow-sty" scale="sm"> + </button>
                     </div>
                   </div>
                   <div class="sc-jSFjdj kJmatq">
@@ -79,7 +72,7 @@
                       <button class="components-swap-btns-sty" scale="sm">
                         <div class="components-swap-bnb-cake-text-lay">
                           <div class="components-swap-bnb-cake-style">
-                            Select a currency
+                            START TIME
                           </div>
                         </div>
                       </button>
@@ -88,7 +81,49 @@
                       <div class="components-swap-inp-sty">
                         <div class="components-swap-inp-lay2">
                           <div class="components-swap-inp-lay3">
-                            <input class="components-swap-input-sty2" inputmode="decimal" title="Token Amount" autocomplete="off" autocorrect="off" type="text" pattern="^[0-9]*[.,]?[0-9]*$" placeholder="0.0" minlength="1" maxlength="79" spellcheck="false" value="">
+                            <input class="components-swap-input-sty2" inputmode="decimal" title="Token Amount" autocomplete="off" autocorrect="off" type="text" pattern="^[0-9]*[.,]?[0-9]*$" placeholder="0:0" minlength="1" maxlength="79" spellcheck="false" value="">
+                          </div>
+                        </div>
+                        <div class="components-swap-inp-lay4"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sc-jSFjdj kJmatq">
+                    <div class="components-swap-btns-lay">
+                      <button class="components-swap-btns-sty" scale="sm">
+                        <div class="components-swap-bnb-cake-text-lay">
+                          <div class="components-swap-bnb-cake-style">
+                            END DATE
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="components-swap-inp-lay">
+                      <div class="components-swap-inp-sty">
+                        <div class="components-swap-inp-lay2">
+                          <div class="components-swap-inp-lay3">
+                            <input class="components-swap-input-sty2" inputmode="decimal" title="Token Amount" autocomplete="off" autocorrect="off" type="text" pattern="^[0-9]*[.,]?[0-9]*$" placeholder="YYYY/MM/DD" minlength="1" maxlength="79" spellcheck="false" value="">
+                          </div>
+                        </div>
+                        <div class="components-swap-inp-lay4"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sc-jSFjdj kJmatq">
+                    <div class="components-swap-btns-lay">
+                      <button class="components-swap-btns-sty" scale="sm">
+                        <div class="components-swap-bnb-cake-text-lay">
+                          <div class="components-swap-bnb-cake-style">
+                          END TIME
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="components-swap-inp-lay">
+                      <div class="components-swap-inp-sty">
+                        <div class="components-swap-inp-lay2">
+                          <div class="components-swap-inp-lay3">
+                            <input class="components-swap-input-sty2" inputmode="decimal" title="Token Amount" autocomplete="off" autocorrect="off" type="text" pattern="^[0-9]*[.,]?[0-9]*$" placeholder="0:0" minlength="1" maxlength="79" spellcheck="false" value="">
                           </div>
                         </div>
                         <div class="components-swap-inp-lay4"></div>
@@ -111,7 +146,7 @@
     </div>
   </div>
 
-<div class="home-section home-section4">
+<!-- <div class="home-section home-section4">
   <div class="home-subcontainer-section home-subcontainer-section4">
     <div class="home-container-text-section home-container-text-section4">
       <div class="home-container-buttons-section button-container1">
@@ -247,8 +282,8 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
   </div>
-</main> -->
+</main>
 
 

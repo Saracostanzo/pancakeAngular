@@ -5,12 +5,12 @@
         <div class="home-subcontainer-section home-subcontainer-section1">
           <div class="home-container-text-section home-container-text-section1">
             <h2 class="home-title home-title-section1">Soon</h2>
-            <h1 class="home-subtitle home-subtitle-section1">Froyo IFO</h1>
-            <a href="#" class="home-page-ifo">
+            <h1 class="home-subtitle home-subtitle-section1">Froyo INFO</h1>
+            <a href="#"routerLink="/info" class="home-page-ifo">
               <button
                 class="buttonStandard buttonHover buttonActive button-container"
               >
-                Go to IFO
+                Go to INFO
                 <img
                   src="../../../assets/img/freccia-dx.svg"
                   class="icona-freccia-dx home-freccia-img"
@@ -34,10 +34,12 @@
             </h4>
 
             <div class="home-container-buttons-section button-container1">
+              <a href="https://docs.pancakeswap.finance/get-started/connection-guide"target="_blank">
               <button class="buttonStandard buttonHover buttonActive">
                 {{ objs[0].buttons }}
               </button>
-              <a href="#" class="home-page-ifo">
+            </a>
+              <a href="#"routerLink="/trade" class="home-page-ifo">
                 <button class="buttonMedium buttonHover home-button-trade-sec2">
                   {{ objs[0].a }}
                 </button>
@@ -148,13 +150,14 @@
           <h5 class="home-subtitle home-subtitle-section4">{{ objs[1].h5 }}</h5>
 
           <div class="home-container-buttons-section button-container1">
+            <a href="#"routerLink="/trade" class="home-collegam-page-trade">
             <button class="buttonStandard buttonHover home-button-sez">
-              <a href="#" class="home-collegam-page-trade"></a
-              >{{ objs[1].buttons }}
+        {{ objs[1].buttons }}
             </button>
+          </a>
             <a
               href="https://docs.pancakeswap.finance/"
-              class="home-colleg-documentazione-pancake"
+              class="home-colleg-documentazione-pancake" target="_blank"
               >{{ objs[1].a }}</a
             >
           </div>
@@ -205,14 +208,13 @@
           <h5 class="home-subtitle home-subtitle-section5">{{ objs[2].h5 }}</h5>
 
           <div class="home-container-buttons-section button-container1">
-            <button
-              class="buttonSmall buttonHover buttonActive home-button-sez"
-            >
-              <a href="#" class="home-collegam-page-earn"></a
-              >{{ objs[2].buttons }}
+            <a href="#"routerLink="/earn" class="home-collegam-page-earn">
+            <button class="buttonSmall buttonHover buttonActive home-button-sez">
+             {{ objs[2].buttons }}
             </button>
+            </a>
             <a
-              href="https://docs.pancakeswap.finance/"
+              href="https://docs.pancakeswap.finance/" target="_blank"
               class="home-colleg-documentazione-pancake"
               >{{ objs[2].a }}</a
             >
@@ -298,7 +300,7 @@
                           <a
                             id="homepage-prediction-cta"
                             class="home-collegam-page-win-sect-predictionbeta"
-                            href="#"
+                            href="#" routerLink="/nft"
                           >
                             <button
                               class="components-pred-btn-layout buttonHover"
@@ -344,7 +346,7 @@
                           <a
                             id="homepage-prediction-cta"
                             class="home-collegam-page-win-sect-lottery"
-                            href="#"
+                            href="#" routerLink="/competition"
                           >
                             <button
                               class="components-lott-btn-layout"
@@ -380,14 +382,15 @@
           </h1>
           <h5 class="home-subtitle home-subtitle-section7">{{ objs[3].h5 }}</h5>
           <div class="button-container1">
+            <a href="/trade" class="home-collegam-page-earn">
             <button
-              class="buttonSmall buttonHover buttonActive home-button-sez"
-            >
-              <a href="src/earn.html" class="home-collegam-page-earn"></a
-              >{{ objs[3].buttons }}
+              class="buttonSmall buttonHover buttonActive home-button-sez">
+
+              {{ objs[3].buttons }}
             </button>
+            </a>
             <a
-              href="https://docs.pancakeswap.finance/"
+              href="https://docs.pancakeswap.finance/" target="_blank"
               class="home-colleg-documentazione-pancake"
               >{{ objs[3].a }}</a
             >
@@ -507,13 +510,15 @@
             No registration needed.
           </h5>
           <a
-            href="https://docs.pancakeswap.finance/"
+            href="https://docs.pancakeswap.finance/" target="_blank"
             class="home-colleg-documentazione-pancake sec8a"
             >Learn how to start</a
           >
+          <a href="https://docs.pancakeswap.finance/get-started/connection-guide"target="_blank">
           <button class="buttonStandard buttonHover buttonActive sec8">
             Connect Wallet
           </button>
+        </a>
         </div>
       </div>
     </div>

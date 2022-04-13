@@ -8,6 +8,7 @@ import { InfoOutletComponent } from '../info-outlet/info-outlet.component';
 import { InfoRoutingModule } from './info.routing.module';
 import { InfoAllPoolsComponent } from '../info-all-pools/info-all-pools.component';
 import { InfoAllTokensComponent } from '../info-all-tokens/info.all-tokens.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -17,12 +18,13 @@ import { InfoAllTokensComponent } from '../info-all-tokens/info.all-tokens.compo
     GraficoComponent,
     InfoOutletComponent,
     InfoAllPoolsComponent,
-    InfoAllTokensComponent
+    InfoAllTokensComponent,
   ],
   imports: [
     NgxPaginationModule,
     CommonModule,
     InfoRoutingModule,
+    FormsModule
 
   ],
   exports: []

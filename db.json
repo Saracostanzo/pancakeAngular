@@ -754,6 +754,7 @@
   },
   {
       "uuid": "x4WXHge-vvFY",
+      "filter":"Add",
       "symbol": "WBTC",
       "name": "Wrapped BTC",
       "color": null,

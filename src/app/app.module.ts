@@ -36,7 +36,6 @@ import { PrizesComponent } from './pages/competition/competition-content/prizes/
 import { RulesComponent } from './pages/competition/competition-content/rules/rules.component';
 import { YourScoreComponent } from './pages/competition/competition-content/your-score/your-score.component';
 import { TeamReanksComponent } from './pages/competition/competition-content/team-reanks/team-reanks.component';
-import { MakeComponent } from './pages/voting/make/make.component';
 
 
 @NgModule({
@@ -69,15 +68,14 @@ import { MakeComponent } from './pages/voting/make/make.component';
     PrizesComponent,
     RulesComponent,
     YourScoreComponent,
-    TeamReanksComponent,
-    MakeComponent
+    TeamReanksComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     InfoModule,
-    VotingModule,
   ],
   providers: [AuthService, VotingService, TradeService],
   bootstrap: [AppComponent],
