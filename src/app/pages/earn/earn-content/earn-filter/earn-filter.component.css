@@ -38,8 +38,8 @@
 
 .earn__tab-box-btn-active {
   padding: 0 13px;
-  background-color: var(--subtle-color);
-  color: whitesmoke;
+  background-color: var(--primary-color);
+  color: whitesmoke !important;
 }
 
 .earn__tab-box-btn {
@@ -420,6 +420,10 @@
   z-index: 500;
 }
 
+.onOffActive {
+  left: 17px;
+}
+
 .input__on-of-toggle:hover {
   box-shadow: rgb(118 69 217) 0px 0px 0px 1px,
     rgb(118 69 217 / 60%) 0px 0px 0px 4px;
@@ -602,6 +606,5 @@
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
   height: 32px;
   padding: 0px 16px;
-  background-color: transparent;
   color: rgb(122, 110, 170);
 }

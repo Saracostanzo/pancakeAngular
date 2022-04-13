@@ -34,6 +34,8 @@ tbody {
 .earn__table-table-row {
   cursor: pointer;
   border-bottom: 2px solid rgb(231, 227, 235);
+  display: flex;
+  justify-content: space-around;
 }
 
 .earn__table-table-body tr td {
@@ -274,12 +276,16 @@ tbody {
   flex-shrink: 0;
 }
 
+.earn-sub {
+  display: flex;
+}
+
 .earn-sub__container {
   animation: 300ms linear 0s 1 normal forwards running bDoNKh;
   overflow: hidden;
   background: rgb(250, 249, 250);
   display: flex;
-  width: 100%;
+  width: 1200px;
   flex-direction: column-reverse;
   padding: 24px;
 }
