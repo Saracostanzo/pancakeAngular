@@ -1,9 +1,11 @@
 .earn__header {
   background: var(--bg-color--grad-block);
 }
-
+* {
+  font-family: Kanit, sans-serif;
+}
 .earn__header-container {
-  padding-top: 32px;
+  padding-top: 70px;
   padding-bottom: 32px;
   max-width: 1200px;
   margin-left: auto;
