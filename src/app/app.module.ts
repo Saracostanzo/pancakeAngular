@@ -5,7 +5,9 @@ import { AppRoutingModule } from 'src/app.routing.modules';
 import { AppComponent } from './app.component';
 import { AccordeonDirective } from './directives/accordeon/accordeon.directive';
 import { DarkmodeComponent } from './layout/elements/darkmode/darkmode.component';
+
 import { FooterComponent } from './layout/footer/footer.component';
+
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { EanrCardComponent } from './pages/earn/earn-content/eanr-card/eanr-card.component';
 import { EanrListComponent } from './pages/earn/earn-content/eanr-list/eanr-list.component';
@@ -36,6 +38,7 @@ import { PrizesComponent } from './pages/competition/competition-content/prizes/
 import { RulesComponent } from './pages/competition/competition-content/rules/rules.component';
 import { YourScoreComponent } from './pages/competition/competition-content/your-score/your-score.component';
 import { TeamReanksComponent } from './pages/competition/competition-content/team-reanks/team-reanks.component';
+
 
 
 @NgModule({
@@ -70,6 +73,7 @@ import { TeamReanksComponent } from './pages/competition/competition-content/tea
     YourScoreComponent,
     TeamReanksComponent
 
+
   ],
   imports: [
     BrowserModule,
@@ -77,7 +81,9 @@ import { TeamReanksComponent } from './pages/competition/competition-content/tea
     HttpClientModule,
     InfoModule,
   ],
+
   providers: [AuthService, VotingService, TradeService],
+
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

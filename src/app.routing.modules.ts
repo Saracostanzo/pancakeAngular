@@ -13,6 +13,7 @@ const routers: Routes=[
     loadChildren: () => import('./app/pages/info/services/info.module').then(m => m.InfoModule),
   },
   {path:"earn", component: EarnComponent },
+  { path: "competition", component: CompetitionComponent },
   {
     path: 'voting',
     loadChildren: () => import('./app/pages/voting/services/voting.module').then(m => m.VotingModule),
