@@ -2459,8 +2459,86 @@
     "iconCommunity":"../../../../assets/img/users-fuxia.svg",
     "freccia":"../../../../assets/img/freccia-dx-viola.svg"
   }
+],
+"newestCollection": [
+    {
+      "title":"Dagen Ape Club",
+      "sfondo": "../../../../../assets/img-page-nft/banner-sm-degen-ape-club.png",
+      "avatar": "../../../../../assets/img-page-nft/avatar-ape.png",
+      "volume":""
+    },
+    {
+      "title":"Liquid Monsters",
+      "sfondo": "../../../../../assets/img-page-nft/banner-sm liquid.png",
+      "avatar": "../../../../../assets/img-page-nft/avatar-liquid.png",
+      "volume":""
+    },
+    {
+      "title":"WolfiLeague",
+      "sfondo": "../../../../../assets/img-page-nft/banner-sm wolf.png",
+      "avatar": "../../../../../assets/img-page-nft/avatar-wolf.png",
+      "volume":""
+    },
+    {
+      "title":"Lil Bulls",
+      "sfondo": "../../../../../assets/img-page-nft/banner-sm bulls.png",
+      "avatar": "../../../../../assets/img-page-nft/avatar-bulls.png",
+      "volume":""
+    },
+    {
+      "title":"Kittens meow meow",
+      "sfondo": "../../../../../assets/img-page-nft/banner-sm kitettens.png",
+      "avatar": "../../../../../assets/img-page-nft/avatar-kittens.png",
+      "volume":""
+    },
+    {
+      "title":"Cross Bosses",
+      "sfondo": "../../../../../assets/img-page-nft/banner-sm bosses.png",
+      "avatar": "../../../../../assets/img-page-nft/avatar-bosses.png",
+      "volume":""
+    }
+],
+    "hotCollection": [
+    {
+      "title":"Pancake Squad",
+      "sfondo": "../../../../../assets/img-page-nft/banner-sm-pancake-squad.png",
+      "avatar": "../../../../../assets/img-page-nft/avatar-pancake-squad.png",
+      "volume":""
+    },
+    {
+      "title":"Pancake Bunnies",
+      "sfondo": "../../../../../assets/img-page-nft/banner-sm-pancake-bunnies.png",
+      "avatar": "../../../../../assets/img-page-nft/avatar-pancake-bunnies.png",
+      "volume":""
+    },
+    {
+      "title":"Gamester Apes",
+      "sfondo": "../../../../../assets/img-page-nft/banner-sm-gamester-apes.png",
+      "avatar": "../../../../../assets/img-page-nft/avatar-gamester-apes.png",
+      "volume":""
+    },
+    {
+      "title":"ShitPunks",
+      "sfondo": "../../../../../assets/img-page-nft/banner-sm-shitpunks.jpg",
+      "avatar": "../../../../../assets/img-page-nft/avatar-shitpunks.png",
+      "volume":""
+    },
+    {
+      "title":"BornBadBoys",
+      "sfondo": "../../../../../assets/img-page-nft/banner-sm-bornbadboys.png",
+      "avatar": "../../../../../assets/img-page-nft/avatar-bornbadboys.png",
+      "volume":""
+    },
+    {
+      "title":"BornBadGirls",
+      "sfondo": "../../../../../assets/img-page-nft/banner-sm-bornbadgirls.png",
+      "avatar": "../../../../../assets/img-page-nft/avatar-bornbadgirls.png",
+      "volume":""
+    }
 ]
 }
+
+
 
 
 

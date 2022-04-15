@@ -1,6 +1,6 @@
 .comp-bg {
   background: radial-gradient(329.58% 50% at 50% 50%, rgb(59, 40, 100) 0%, rgb(25, 19, 38) 100%);
-  padding: 110px 0px;
+  padding: 104px 0px;
   position: relative;
   flex-direction: column;
   -webkit-box-align: center;
@@ -8,8 +8,33 @@
   z-index: 0;
 }
 
+.comp-hd-mrg-top {
+  margin-top: -76px;
+}
+
+.desk-padd {
+  min-height: auto;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.max-hgt {
+  max-width: 1200px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .comp-flex {
   display: flex;
+}
+
+.comp-pad-drc {
+  padding-top: 10px;
+  flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
 }
 
 .comp-marg-bot {
@@ -27,6 +52,7 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
+  text-align: left;
   margin-bottom: 16px;
 }
 
@@ -62,13 +88,14 @@
 .comp-card-time {
   flex-direction: column;
   margin: -48px 0px 0px 36px;
-  padding: 16px 24px;
   width: fit-content;
   height: fit-content;
   background: linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%);
   border: 1px solid rgb(118, 69, 217);
   box-sizing: border-box;
   border-radius: 0px 0px 24px 24px;
+  padding: 16px 18px;
+  margin: -30px auto 50px;
   justify-content: space-around;
 }
 
@@ -83,6 +110,7 @@
 
 .icon-clock {
   width: 64px;
+  height: 64px;
 }
 
 .comp-card-foot {
@@ -142,6 +170,73 @@
   line-height: 1.5;
 }
 
-@media screen and (min-width: 576px) {
-  
+@media screen and (max-width: 1080px) {
+  .comp-card-time {
+    flex-direction: row;
+  }
+
+  .comp-flex-cont {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 852px) {
+  .comp-bia-sty {
+    text-align: center;
+  }
+
+  .comp-date-sty {
+    text-align: center;
+  }
+
+  .comp-prize-sty {
+    text-align: center;
+  }
+
+  .comp-vol-sty {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .desk-padd {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+  .comp-card-time {
+    padding: 16px 24px;
+  }
+
+  .comp-card-head {
+    margin-right: 24px;
+  }
+
+  .comp-bia-sty {
+   font-size: 48px;
+   text-align: center;
+  }
+
+  .comp-hd-mrg-top {
+    margin-top: -61px;
+  }
+
+  .comp-date-sty {
+    text-align: center;
+  }
+
+  .comp-prize-sty {
+    text-align: center;
+  }
+
+  .comp-vol-sty {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .max-hgt {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
