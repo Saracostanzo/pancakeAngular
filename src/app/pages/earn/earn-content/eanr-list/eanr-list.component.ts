@@ -2,6 +2,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { TokensArr } from 'src/app/pages/earn/services/Tokens.service';
 import { map } from 'rxjs/operators';
 import { HttpService } from 'src/app/pages/earn/services/HttpService';
+
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -10,10 +11,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./eanr-list.component.css'],
 })
 export class EanrListComponent implements OnInit {
-  constructor(
-    private tokenService: TokensArr,
-    private httpService: HttpService
-  ) {}
+  constructor(private tokenService: TokensArr) {}
 
   subscription: Subscription | undefined;
 

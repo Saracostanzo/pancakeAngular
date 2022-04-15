@@ -15,18 +15,26 @@
         (click)="onStacked()"
       />
 
-      <div class="input__on-of-toggle"></div>
+      <div
+        [ngClass]="{ onOffActive: staked === true }"
+        class="input__on-of-toggle"
+      ></div>
     </div>
     <p class="input__on-of-text">Staked only</p>
-    <div class="earn__filters-tab">
+    <div class="earn__filters-tab" (click)="onLive()">
       <div class="tab-version-box earn__tab-box">
         <button
-          class="tab-button-v1 earn__tab-box-btn earn__tab-box-btn-active"
+          [ngClass]="{ 'earn__tab-box-btn-active': live === true }"
+          class="tab-button-v1 earn__tab-box-btn"
           id="earn-v1"
         >
           Live
         </button>
-        <button class="tab-button-v1 earn__tab-box-btn" id="earn-v2">
+        <button
+          [ngClass]="{ 'earn__tab-box-btn-active': live === false }"
+          class="tab-button-v1 earn__tab-box-btn"
+          id="earn-v2"
+        >
           Finisched
         </button>
       </div>
@@ -34,7 +42,7 @@
   </div>
   <div class="earn__filters-right">
     <div class="input-search-sort__wrapper">
-      <div class="input-sort__wrapper">
+      <!-- <div class="input-sort__wrapper">
         <div class="input__text">sort by</div>
         <div class="input-sort__box">
           <div class="input-sort__first-content">
@@ -64,13 +72,14 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> -->
       <!--input search-->
       <div class="input-search__wrapper">
         <div class="input__text">search</div>
         <div class="input-search__box">
           <div class="input-search__field">
             <input
+              (input)="onSearch($event)"
               placeholder="Search Farms"
               scale="md"
               class="input-search__input"
