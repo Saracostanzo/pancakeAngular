@@ -556,7 +556,7 @@
   width: 100%;
   z-index: 1;
   left: 50%;
-  bottom: -50px;
+  bottom: -56px;
   transform: translate(-50%, 0px);
 }
 
@@ -1363,19 +1363,6 @@
   margin-top: 24px;
 }
 
-.comp-fih- {}
-
-.comp-fih- {}
-
-.comp-fih- {}
-
-.comp-fih- {}
-
-
-
-
-
-
 .comp-foot-bg-sty {
   background: rgb(25, 19, 38);
   z-index: 6;
@@ -1406,10 +1393,14 @@
 
 .comp-foot-mh {
   min-height: auto;
+  padding-top: 53px;
+  padding-bottom: 53px;
 }
 
 .comp-foot-cont-m-lr {
   max-width: 1200px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1424,6 +1415,21 @@
   height: fit-content;
 }
 
+.comp-gen-flx-dr-algn {
+  flex-direction: column;
+}
+
+.comp-gen-mrg-tp {
+  flex: 2 1 0%;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 1079px) {
+  .comp-gen-mrg-tp {
+    flex: 1 1 0%;
+  }
+}
+
 
 @media screen and (min-width: 1080px) {
   .comp-grid-tmplt-lyt-rsp {
@@ -1433,9 +1439,12 @@
   .comp-pos-rltv {
     position: relative;
   }
+}
 
-  .comp-gen-flx-prc {
-    flex: 2 1 0%;
+@media screen and (max-width: 967px) {
+  .comp-foot-mh {
+    padding-top: 38px;
+    padding-bottom: 38px;
   }
 }
 
@@ -1457,9 +1466,11 @@
     position: absolute;
   }
 
-  .comp-pad-gen {
-    padding-top: 48px;
-    padding-bottom: 48px
+}
+
+@media screen and (max-width: 851px) {
+  .comp-gen-mrg-tp {
+    margin-top: 16px;
   }
 }
 
@@ -1495,10 +1506,6 @@
     flex: 1 1 0%;
   }
 
-  .comp-gen-flx-prc {
-    flex: 1 1 0%;
-  }
-
   .comp-rsp-d-block {
     display: block;
   }
@@ -1506,10 +1513,6 @@
   .comp-gen-flx-dr-algn {
     flex-direction: row;
     align-items: flex-start;
-  }
-
-  .comp-gen-mrg-tp {
-    margin-top: 0px;
   }
 }
 
@@ -1543,10 +1546,7 @@
     position: relative;
   }
 
-  .comp-pad-gen {
-    padding-top: 32px;
-    padding-bottom: 32px
-  }
+
 
   .comp-fth-ctr-table-cpse>thead th {
     padding: 16px;
@@ -1562,10 +1562,14 @@
 
 }
 
-@media screen and (min-width: 370px) {
-  .comp-pad-gen {
-    padding: 0px 16px;
+@media screen and (max-width: 370px) {
+  .comp-foot-mh {
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
+}
+
+@media screen and (min-width: 370px) {
 
   .comp-grid-tmplt-lyt-rsp {
     grid-template-columns: auto repeat(3, 1fr);
